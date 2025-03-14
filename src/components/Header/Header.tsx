@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+import Button from '../Button';
 import styles from './Header.module.scss';
 
 const Header = () => (
@@ -26,9 +27,7 @@ const Header = () => (
           <Link href="faq"> FAQ</Link>
         </li>
       </ul>
-      <Link href="/booking">
-        <button>Book now</button>
-      </Link>
+      <Button text={'Book now'} route={'/booking'}></Button>
     </header>
   </div>
 );
