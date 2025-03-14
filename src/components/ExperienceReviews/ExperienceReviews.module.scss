@@ -1,0 +1,11 @@
+.reviews {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.review {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
