@@ -3,6 +3,19 @@
 
 .container {
   color: $white;
-  text-align: center;
-  padding: rem-calc(32);
+  padding: rem-calc(32) rem-calc(170);
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigationlist {
+  display: flex;
+  gap: rem-calc(32);
 }
