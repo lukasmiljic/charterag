@@ -1,10 +1,22 @@
 @use '@/styles/settings/variables' as *;
 
 .container {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   background: $green-vogue-950;
   color: $white;
+  overflow: hidden;
+}
+
+.bgvideo {
+  object-fit: cover;
+  position: absolute;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 19.22%);
+}
+
+.content {
+  z-index: 10;
 }
