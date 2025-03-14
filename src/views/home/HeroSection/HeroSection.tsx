@@ -11,7 +11,15 @@ const HeroSection = () => (
       className={styles.bgvideo}
     />
     <div className={styles.content}>
-      <h2>Hero section</h2>
+      <p className="subtitle">Sail your way with</p>
+      <h1>Charterag</h1>
+      <ul className={`${styles.taglines} subtitle`}>
+        <li>adventure</li>
+        <li>relax</li>
+        <li>explore</li>
+        <li>fun</li>
+        <li>dance</li>
+      </ul>
     </div>
   </section>
 );

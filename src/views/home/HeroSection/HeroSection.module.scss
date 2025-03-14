@@ -37,4 +37,19 @@
 
 .content {
   z-index: 10;
+  text-align: center;
+}
+
+.taglines {
+  display: flex;
+  justify-content: center;
+}
+
+.taglines li + li::before {
+  content: url('/icons/Soft Star.svg');
+  height: 18px;
+  width: 18px;
+  display: inline-block;
+  margin: 0 0.5ch;
+  vertical-align: middle;
 }
