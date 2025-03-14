@@ -1,11 +1,10 @@
 {
-  "name": "@workspace-studio/nextjs-boilerplate",
+  "name": "charterag",
   "version": "1.0.0",
   "private": true,
   "author": {
-    "name": "Workspace",
-    "email": "hello@workspace.hr",
-    "url": "https://workspace.hr"
+    "name": "Luka Smiljić",
+    "url": "https://github.com/lukasmiljic"
   },
   "scripts": {
     "prepare": "husky",

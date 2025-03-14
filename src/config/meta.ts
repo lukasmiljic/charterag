@@ -7,10 +7,10 @@ interface Meta {
 }
 
 const meta: Meta = {
-  name: 'Workspace',
-  title: 'Workspace | Next.js Boilerplate',
-  titleTemplate: '%s | Workspace',
-  description: 'This project was bootstrapped with create-next-app.',
+  name: 'Charterag',
+  title: 'Charterag | Homepage',
+  titleTemplate: '%s | Charterg',
+  description: 'Next.js web app showcasing a charter agency and their different routes and plans. ',
   url: 'https://workspace.hr',
 };
 
