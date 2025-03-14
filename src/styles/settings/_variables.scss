@@ -3,6 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 // Colors
+$yellow: #ffd60a;
+$background: #ecfbff;
 $black: #000;
 $white: #fff;
 $black-900: rgba($black, 0.9);
@@ -14,7 +16,19 @@ $black-400: rgba($black, 0.4);
 $black-300: rgba($black, 0.3);
 $black-200: rgba($black, 0.2);
 $black-100: rgba($black, 0.1);
-
+$green-vogue-50: #f0f8ff;
+$green-vogue-100: #dff0ff;
+$green-vogue-200: #b8e1ff;
+$green-vogue-300: #79caff;
+$green-vogue-400: #33affd;
+$green-vogue-500: #0895ef;
+$green-vogue-600: #0076cd;
+$green-vogue-700: #005da5;
+$green-vogue-800: #035089;
+$green-vogue-900: #094371;
+$green-vogue-950: #062949;
+$emerald-100: #dbfdec;
+$emerald-500: #1dc072;
 // Fonts
 $primary-font-family: 'Poppins', inter, system-ui, avenir, helvetica, arial, sans-serif;
 
