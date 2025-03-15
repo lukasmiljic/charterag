@@ -7,7 +7,7 @@ const ExperienceCards = () => (
     <div className={styles.card}>
       <Image
         className={styles.bgimage}
-        src={'/sections/experience/sail.png'}
+        src="/sections/experience/sail.png"
         alt="card background image"
         width={265}
         height={370}
@@ -17,7 +17,7 @@ const ExperienceCards = () => (
     <div className={styles.card}>
       <Image
         className={styles.bgimage}
-        src={'/sections/experience/party.png'}
+        src="/sections/experience/party.png"
         alt="card background image"
         width={265}
         height={370}
@@ -27,7 +27,7 @@ const ExperienceCards = () => (
     <div className={styles.card}>
       <Image
         className={styles.bgimage}
-        src={'/sections/experience/explore.png'}
+        src="/sections/experience/explore.png"
         alt="card background image"
         width={265}
         height={370}
@@ -37,7 +37,7 @@ const ExperienceCards = () => (
     <div className={styles.card}>
       <Image
         className={styles.bgimage}
-        src={'/sections/experience/relax.png'}
+        src="/sections/experience/relax.png"
         alt="card background image"
         width={265}
         height={370}

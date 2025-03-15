@@ -2,9 +2,26 @@
 
 .container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   background: $green-vogue-950;
   color: $white;
+  padding: 0 10.625rem;
+  gap: 7rem;
+  padding-top: 79px;
+  padding-bottom: 112px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.paragraph {
+  max-width: 596px;
+  text-align: center;
 }
