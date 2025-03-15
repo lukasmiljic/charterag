@@ -1,0 +1,11 @@
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.paragraph {
+  max-width: 596px;
+  text-align: center;
+}
