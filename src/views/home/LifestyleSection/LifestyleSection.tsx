@@ -15,56 +15,56 @@ const LifestyleSection = () => (
     <div className={styles.imagegrid}>
       <Image
         className={styles.gridimage}
-        src={'/sections/lifestyle/image1.png'}
+        src="/sections/lifestyle/image1.png"
         alt="grid image"
         width={265}
         height={242}
       />
       <Image
         className={styles.gridimage}
-        src={'/sections/lifestyle/image2.png'}
+        src="/sections/lifestyle/image2.png"
         alt="grid image"
         width={265}
         height={242}
       />
       <Image
         className={styles.gridimage}
-        src={'/sections/lifestyle/image3.png'}
+        src="/sections/lifestyle/image3.png"
         alt="grid image"
         width={265}
         height={242}
       />
       <Image
         className={styles.gridimage}
-        src={'/sections/lifestyle/image4.png'}
+        src="/sections/lifestyle/image4.png"
         alt="grid image"
         width={265}
         height={242}
       />
       <Image
         className={styles.gridimage}
-        src={'/sections/lifestyle/image5.png'}
+        src="/sections/lifestyle/image5.png"
         alt="grid image"
         width={265}
         height={242}
       />
       <Image
         className={styles.gridimage}
-        src={'/sections/lifestyle/image6.png'}
+        src="/sections/lifestyle/image6.png"
         alt="grid image"
         width={265}
         height={242}
       />
       <Image
         className={styles.gridimage}
-        src={'/sections/lifestyle/image7.png'}
+        src="/sections/lifestyle/image7.png"
         alt="grid image"
         width={265}
         height={242}
       />
       <Image
         className={styles.gridimage}
-        src={'/sections/lifestyle/image8.png'}
+        src="/sections/lifestyle/image8.png"
         alt="grid image"
         width={265}
         height={242}
@@ -73,7 +73,7 @@ const LifestyleSection = () => (
     <div className={styles.taglines}>
       <div className={styles.tagline}>
         <div className={styles.firstline}>
-          <Image src={'/icons/Sailboat.svg'} alt="sailboat" width={26} height={26} />
+          <Image src="/icons/Sailboat.svg" alt="sailboat" width={26} height={26} />
           <h5 className="semibold">A trip like no other</h5>
         </div>
         <p>Spend unforgettable 7 days at sea with your crew at your own pace</p>
@@ -81,7 +81,7 @@ const LifestyleSection = () => (
 
       <div className={styles.tagline}>
         <div className={styles.firstline}>
-          <Image src={'/icons/Sailboat.svg'} alt="sailboat" width={26} height={26} />
+          <Image src="/icons/Sailboat.svg" alt="sailboat" width={26} height={26} />
           <h5 className="semibold">A trip like no other</h5>
         </div>
         <p>Spend unforgettable 7 days at sea with your crew at your own pace</p>
@@ -89,7 +89,7 @@ const LifestyleSection = () => (
 
       <div className={styles.tagline}>
         <div className={styles.firstline}>
-          <Image src={'/icons/Sailboat.svg'} alt="sailboat" width={26} height={26} />
+          <Image src="/icons/Sailboat.svg" alt="sailboat" width={26} height={26} />
           <h5 className="semibold">A trip like no other</h5>
         </div>
         <p>Spend unforgettable 7 days at sea with your crew at your own pace</p>
