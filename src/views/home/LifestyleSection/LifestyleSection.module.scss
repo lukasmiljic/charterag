@@ -2,7 +2,52 @@
 
 .container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  padding-top: 112px;
+  padding: 0 10.625rem;
+}
+
+.container h2 {
+  width: 350px;
+}
+
+.sectionheadercontainer {
+  max-width: 540px;
+}
+
+.imagegrid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 13px;
+}
+
+.gridimage {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.taglines {
+  width: 100%;
+  padding-top: 56px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tagline {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 322px;
+}
+
+.firstline {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
