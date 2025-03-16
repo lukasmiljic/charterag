@@ -1,5 +1,6 @@
 import Image from 'next/image';
 
+import Bar from '../Bar';
 import styles from './RoutesCards.module.scss';
 
 const RoutesCards = () => (
@@ -20,15 +21,11 @@ const RoutesCards = () => (
         <div className={styles.bars}>
           <div className={styles.bar}>
             <p className="body1">Party</p>
-            <div className={styles.emptybar}>
-              <div className={styles.fullbar} style={{ width: '90%' }} />
-            </div>
+            <Bar percentage={90} />
           </div>
           <div className={styles.bar}>
             <p className="body1">Adventure</p>
-            <div className={styles.emptybar}>
-              <div className={styles.fullbar} style={{ width: '30%' }} />
-            </div>
+            <Bar percentage={30} />
           </div>
         </div>
       </div>
@@ -50,15 +47,11 @@ const RoutesCards = () => (
         <div className={styles.bars}>
           <div className={styles.bar}>
             <p className="body1">Party</p>
-            <div className={styles.emptybar}>
-              <div className={styles.fullbar} style={{ width: '95%' }} />
-            </div>
+            <Bar percentage={95} />
           </div>
           <div className={styles.bar}>
             <p className="body1">Adventure</p>
-            <div className={styles.emptybar}>
-              <div className={styles.fullbar} style={{ width: '10%' }} />
-            </div>
+            <Bar percentage={10} />
           </div>
         </div>
       </div>
@@ -80,15 +73,11 @@ const RoutesCards = () => (
         <div className={styles.bars}>
           <div className={styles.bar}>
             <p className="body1">Party</p>
-            <div className={styles.emptybar}>
-              <div className={styles.fullbar} style={{ width: '40%' }} />
-            </div>
+            <Bar percentage={40} />
           </div>
           <div className={styles.bar}>
             <p className="body1">Adventure</p>
-            <div className={styles.emptybar}>
-              <div className={styles.fullbar} style={{ width: '80%' }} />
-            </div>
+            <Bar percentage={80} />
           </div>
         </div>
       </div>
@@ -110,15 +99,11 @@ const RoutesCards = () => (
         <div className={styles.bars}>
           <div className={styles.bar}>
             <p className="body1">Party</p>
-            <div className={styles.emptybar}>
-              <div className={styles.fullbar} style={{ width: '10%' }} />
-            </div>
+            <Bar percentage={10} />
           </div>
           <div className={styles.bar}>
             <p className="body1">Adventure</p>
-            <div className={styles.emptybar}>
-              <div className={styles.fullbar} style={{ width: '90%' }} />
-            </div>
+            <Bar percentage={90} />
           </div>
         </div>
       </div>
