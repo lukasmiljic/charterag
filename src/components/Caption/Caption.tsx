@@ -2,8 +2,17 @@ import styles from './Caption.module.scss';
 
 interface CaptionText {
   text: string;
+  regularCase?: boolean;
+  backgroundColor?: string;
 }
 
-const Caption = ({ text }: CaptionText) => <div className={`${styles.caption} body2 caps`}>{text}</div>;
+const Caption = ({ text, regularCase, backgroundColor }: CaptionText) => (
+  <div
+    className={`${styles.caption} body2 ${!regularCase && 'caps'} `}
+    style={{ backgroundColor: backgroundColor || 'inherit' }}
+  >
+    {text}
+  </div>
+);
 
 export default Caption;
