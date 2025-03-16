@@ -1,0 +1,15 @@
+@use '@/styles/settings/variables' as *;
+
+.emptybar {
+  width: 177px;
+  height: 10px;
+  background-color: $white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.fullbar {
+  width: 100%;
+  height: 100%;
+  background-color: $green-vogue-400;
+}
