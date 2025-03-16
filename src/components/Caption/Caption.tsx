@@ -9,10 +9,9 @@ interface CaptionText {
 const Caption = ({ text, regularCase, backgroundColor }: CaptionText) => (
   <div
     className={`${styles.caption} body2 ${!regularCase && 'caps'} `}
-    style={{ backgroundColor: backgroundColor || 'inherit' }}
+    {...(backgroundColor && { style: { backgroundColor } })}
   >
     {text}
   </div>
 );
-
 export default Caption;
