@@ -1,8 +1,47 @@
 @use '@/styles/settings/variables' as *;
 
 .container {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+}
+
+.bgimage {
+  object-fit: cover;
+}
+
+.content {
+  position: relative;
+  z-index: 5;
+  padding-left: 880px;
+}
+
+.cards {
+  display: flex;
+  gap: 24px;
+  padding-top: 32px;
+}
+
+.card {
+  background-color: $white;
+  padding: 42px 30px;
+  width: 500px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border-radius: 10px;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.stars {
+  display: flex;
+  gap: 7px;
 }
