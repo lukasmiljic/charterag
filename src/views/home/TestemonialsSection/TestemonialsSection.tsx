@@ -12,7 +12,7 @@ const TestemonialsSection = () => (
           <div className={styles.userinfo}>
             <Image
               className={styles.userimage}
-              src={'/sections/testemonials/user.png'}
+              src="/sections/testemonials/user.png"
               alt="user profile picture"
               width={40}
               height={40}
@@ -20,11 +20,11 @@ const TestemonialsSection = () => (
             <p className="body2">Courtney Henry</p>
           </div>
           <div className={styles.stars}>
-            <Image src={'/sections/testemonials/Star.svg'} alt="star" width={23} height={23} />
-            <Image src={'/sections/testemonials/Star.svg'} alt="star" width={23} height={23} />
-            <Image src={'/sections/testemonials/Star.svg'} alt="star" width={23} height={23} />
-            <Image src={'/sections/testemonials/Star.svg'} alt="star" width={23} height={23} />
-            <Image src={'/sections/testemonials/Star.svg'} alt="star" width={23} height={23} />
+            <Image src="/sections/testemonials/Star.svg" alt="star" width={23} height={23} />
+            <Image src="/sections/testemonials/Star.svg" alt="star" width={23} height={23} />
+            <Image src="/sections/testemonials/Star.svg" alt="star" width={23} height={23} />
+            <Image src="/sections/testemonials/Star.svg" alt="star" width={23} height={23} />
+            <Image src="/sections/testemonials/Star.svg" alt="star" width={23} height={23} />
           </div>
           <h5>Amazing experience</h5>
           <p className="body1">
