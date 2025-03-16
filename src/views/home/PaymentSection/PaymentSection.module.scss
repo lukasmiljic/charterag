@@ -2,7 +2,62 @@
 
 .container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  padding-bottom: 112px;
+}
+
+.container h2 {
+  width: 445px;
+}
+
+.cards {
+  display: flex;
+  gap: 44px;
+  padding-top: 112px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: $green-vogue-200;
+  padding: 38px 44px;
+  border-radius: 10px;
+  width: 434px;
+  height: 404px;
+  gap: 50px;
+  box-shadow:
+    2px 2px 6px 0 #00000008,
+    8px 7px 11px 0 #00000008,
+    19px 17px 15px 0 #00000005;
+}
+
+.text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card h3 {
+  width: 183px;
+}
+
+.caption {
+  background-color: $green-vogue-950;
+}
+
+.card ul li {
+  padding-bottom: 12px;
+}
+
+.card ul li::before {
+  content: url('/icons/CheckBadge.svg');
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.5ch;
+}
+
+.inactive::before {
+  filter: brightness(0) invert(78%) sepia(0%) saturate(36%) hue-rotate(167deg) brightness(95%) contrast(98%);
 }
