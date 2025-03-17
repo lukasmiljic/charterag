@@ -2,17 +2,18 @@ import styles from './Bar.module.scss';
 
 interface BarProps {
   percentage: number;
-  color?: string;
+  foreground?: string;
+  background?: string;
 }
 
-const Bar = ({ percentage, color }: BarProps) => {
+const Bar = ({ percentage, foreground, background }: BarProps) => {
   const clampedPercentage = Math.max(0, Math.min(100, percentage));
 
   return (
-    <div className={styles.emptybar}>
+    <div className={styles.emptybar} {...(background && { style: { backgroundColor: background } })}>
       <div
         className={styles.fullbar}
-        style={{ width: `${clampedPercentage}%`, ...(color && { backgroundColor: color }) }}
+        style={{ width: `${clampedPercentage}%`, ...(foreground && { backgroundColor: foreground }) }}
       />
     </div>
   );
