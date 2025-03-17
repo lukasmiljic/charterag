@@ -2,7 +2,61 @@
 
 .container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  padding-top: 112px;
+  padding-bottom: 80px;
+}
+
+.sectionheadercontainer {
+  width: 464px;
+}
+
+.buttons {
+  display: flex;
+  gap: 16px;
+  padding-top: 37px;
+}
+
+.images {
+  position: relative;
+  display: flex;
+}
+
+.images img {
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow:
+    -0.81px 2.43px 5.66px 0 #0000000f,
+    -4.04px 8.9px 9.71px 0 #0000000d,
+    -8.9px 19.42px 12.94px 0 #00000008,
+    -15.37px 34.79px 15.37px 0 #00000003;
+}
+
+.image1 {
+  transform: rotate(-6deg);
+  margin-right: -50px;
+}
+
+.image2 {
+  margin-top: 169px;
+  position: relative;
+  z-index: 5;
+}
+
+.image3 {
+  position: relative;
+  margin-left: -100px;
+  z-index: 1;
+  transform: rotate(6deg);
+}
+
+.buttons button {
+  box-shadow: 0 4px 10px 0 #0000001a;
+  transition: box-shadow 0.1s ease-out;
+}
+
+.buttons button:hover {
+  box-shadow: 0 4px 10px 0 #00000026;
 }
