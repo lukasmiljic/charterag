@@ -7,9 +7,10 @@ import styles from './Button.module.scss';
 interface ButtonProps {
   text: string;
   route?: string;
+  color?: string;
 }
 
-const Button = ({ text, route }: ButtonProps) => {
+const Button = ({ text, route, color }: ButtonProps) => {
   const router = useRouter();
 
   const handleClick = () => {
@@ -19,7 +20,12 @@ const Button = ({ text, route }: ButtonProps) => {
   };
 
   return (
-    <button className={styles.button} type="button" onClick={handleClick}>
+    <button
+      className={styles.button}
+      type="button"
+      onClick={handleClick}
+      {...(color && { style: { backgroundColor: color } })}
+    >
       {text}
     </button>
   );
