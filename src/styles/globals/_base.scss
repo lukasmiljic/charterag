@@ -1,4 +1,5 @@
 @use '../settings/variables' as *;
+@use '@/styles/mixins/breakpoints' as *;
 
 html,
 body {
@@ -49,7 +50,7 @@ h3 {
   font-size: 2rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 105%; /* 2.1rem */
+  line-height: 105%;
   letter-spacing: -0.04rem;
 }
 
@@ -84,4 +85,32 @@ h5 {
 .body2.caps {
   line-height: 130%;
   text-transform: uppercase;
+}
+
+@mixin container($is-centered: false) {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: $max-width;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  @include media(xl) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @if $is-centered {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.container {
+  @include container();
+}
+
+.centercontainer {
+  @include container($is-centered: true);
 }
