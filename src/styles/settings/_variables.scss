@@ -44,4 +44,4 @@ $breakpoints: (
   lg: 1100px,
   xl: 1280px,
 );
-$max-width: map.get($breakpoints, 'xl');
+$max-width: map.get($breakpoints, 'lg');
