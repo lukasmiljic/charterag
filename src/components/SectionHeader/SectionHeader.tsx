@@ -5,10 +5,11 @@ interface SectionHeaderProps {
   caption?: string;
   header: string;
   paragraph?: string;
+  className?: string;
 }
 
-const SectionHeader = ({ caption, header, paragraph }: SectionHeaderProps) => (
-  <div className={styles.text}>
+const SectionHeader = ({ caption, header, paragraph, className }: SectionHeaderProps) => (
+  <div className={`${styles.text} ${className ? className : ''}`}>
     {caption && <Caption text={caption} />}
     <h2>{header}</h2>
     {paragraph && <p className={`${styles.paragraph} body2`}>{paragraph} </p>}
