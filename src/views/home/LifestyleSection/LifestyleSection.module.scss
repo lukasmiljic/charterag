@@ -1,52 +1,65 @@
 @use '@/styles/settings/variables' as *;
+@use '@/styles/utils/rem-calc' as *;
+@use '@/styles/mixins/breakpoints' as *;
 
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  padding: 0 10.625rem;
-
-  // add this back in after removing section header padding top
-  // padding-top: 112px;
+.lifestyleSection {
+  padding-top: rem-calc(112);
 }
 
-.container h2 {
-  width: 350px;
+.lifestyleSectionHeader {
+  max-width: rem-calc(540);
 }
 
-.sectionheadercontainer {
-  max-width: 540px;
+.lifestyleSectionHeader h2 {
+  width: rem-calc(350);
 }
 
 .imagegrid {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, auto);
-  gap: 13px;
-  padding-top: 95px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+  padding-top: rem-calc(95);
+
+  @include media(md) {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .gridimage {
-  border-radius: 10px;
+  border-radius: $border-radius;
   width: 100%;
   height: 100%;
 }
 
 .taglines {
   width: 100%;
-  padding-top: 56px;
+  padding-top: rem-calc(56);
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+
+  @include media(md) {
+    gap: 1rem;
+  }
 }
 
 .tagline {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  width: 322px;
+  align-items: center;
+  gap: 0.7rem;
+  max-width: 322px;
+  min-width: 250px;
+  margin: 0 auto;
+  text-align: center;
+
+  @include media(md) {
+    text-align: left;
+    align-items: flex-start;
+  }
 }
 
 .firstline {
