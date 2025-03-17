@@ -1,4 +1,5 @@
-import Caption from '../Caption';
+import Caption from '@/components/Caption';
+
 import styles from './SectionHeader.module.scss';
 
 interface SectionHeaderProps {
