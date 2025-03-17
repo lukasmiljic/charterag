@@ -6,7 +6,7 @@ import SectionHeader from '@/components/SectionHeader';
 import styles from './BucketListSection.module.scss';
 
 const BucketListSection = () => (
-  <section className={styles.container}>
+  <section className={`${styles.bucketsection} centercontainer`}>
     <div className={styles.images}>
       <Image
         className={styles.image1}
@@ -30,12 +30,12 @@ const BucketListSection = () => (
         height={273}
       />
     </div>
-    <div className={styles.sectionheadercontainer}>
-      <SectionHeader
-        header="Check Charterag off your bucket list"
-        paragraph="Lorem ipsum dolor sit amet consectetur. Tellus lectus non purus odio amet"
-      />
-    </div>
+
+    <SectionHeader
+      className={styles.bucketlistSectionHeader}
+      header="Check Charterag off your bucket list"
+      paragraph="Lorem ipsum dolor sit amet consectetur. Tellus lectus non purus odio amet"
+    />
     <div className={styles.buttons}>
       <Button text="explore" />
       <Button text="follow us" color="white" />
