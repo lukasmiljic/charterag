@@ -4,6 +4,70 @@
 .container {
   background-color: $green-vogue-950;
   color: $white;
-  text-align: center;
   padding: rem-calc(64);
+}
+
+.firstrow {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 90px;
+}
+
+.arrowup {
+  width: 50px;
+  height: 50px;
+  background-color: $white;
+  display: grid;
+  place-items: center;
+  border-radius: 100%;
+}
+
+.secondrow {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 82px;
+}
+
+.links {
+  display: flex;
+  gap: 120px;
+  text-align: left;
+}
+
+.links p {
+  padding-bottom: 22px;
+}
+
+.links ul li {
+  padding-bottom: 12px;
+}
+
+.socialmedia {
+  display: flex;
+  gap: 8px;
+}
+
+.iconframe {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  display: grid;
+  place-items: center;
+  background-color: $green-vogue-900;
+}
+
+.thirdrow {
+  border-top: 1px solid $green-vogue-900;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 56px;
+}
+
+.copyrighttext {
+  text-align: left;
+}
+
+.legallinks {
+  display: flex;
+  gap: 64px;
 }
