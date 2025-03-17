@@ -1,15 +1,17 @@
 @use '@/styles/settings/variables' as *;
+@use '@/styles/utils/rem-calc' as *;
 
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+.experiencesection {
   background: $green-vogue-950;
   color: $white;
-  padding: 0 10.625rem;
-  gap: 7rem;
-  padding-top: 79px;
-  padding-bottom: 112px;
+  padding-top: rem-calc(80);
+  padding-bottom: rem-calc(112);
+}
+
+.experienceSectionHeader {
+  margin: rem-calc(112) 0;
+}
+
+.experienceSectionHeader p {
+  max-width: rem-calc(596);
 }
