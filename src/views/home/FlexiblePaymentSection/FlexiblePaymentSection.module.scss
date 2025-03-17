@@ -1,48 +1,39 @@
 @use '@/styles/settings/variables' as *;
+@use '@/styles/utils/rem-calc' as *;
 
-.container {
+.flexiblesection {
   color: $white;
   background-color: $green-vogue-950;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding: rem-calc(112) 0 rem-calc(33);
 }
 
 .cards {
-  margin-top: 115px;
+  margin-top: rem-calc(115);
   display: flex;
-  gap: 64px;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: rem-calc(64);
+  row-gap: rem-calc(32);
   color: $white-600;
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  width: 272px;
-  height: 220px;
+  width: rem-calc(272);
+  height: rem-calc(220);
   background-color: $white;
-  border-radius: 10px;
-  padding: 30px;
-  gap: 20px;
-}
-
-.termstext {
-  padding-top: 121px;
-  padding-bottom: 33px;
-  color: $white-200;
-}
-
-.termstext a {
-  color: $green-vogue-400;
+  border-radius: $border-radius;
+  padding: rem-calc(30);
+  gap: rem-calc(20);
 }
 
 .moneycircle {
   display: grid;
   place-content: center;
   position: relative;
-  height: 56px;
-  width: 56px;
+  height: rem-calc(56);
+  width: rem-calc(56);
   background-color: $emerald-100;
   border-radius: 100%;
 }
@@ -60,5 +51,16 @@
 }
 
 .barcontainer {
-  height: 8px;
+  height: 0.5rem;
+}
+
+.termstext {
+  text-align: center;
+  padding-top: rem-calc(121);
+  padding-bottom: rem-calc(33);
+  color: $white-200;
+}
+
+.termstext a {
+  color: $green-vogue-400;
 }
