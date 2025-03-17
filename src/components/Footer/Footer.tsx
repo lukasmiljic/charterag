@@ -4,7 +4,7 @@ import styles from './Footer.module.scss';
 
 const Footer = () => (
   <footer className={styles.footer}>
-    <div className={styles.container}>
+    <div className="container">
       <div className={styles.firstrow}>
         <Image src="/branding/charterag_logo.svg" alt="charterag" width={216} height={50} />
         <div className={styles.arrowup}>
