@@ -108,7 +108,7 @@ h5 {
 }
 
 .container {
-  @include container();
+  @include container;
 }
 
 .centercontainer {
