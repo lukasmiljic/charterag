@@ -14,4 +14,5 @@ const Caption = ({ text, regularCase, backgroundColor }: CaptionText) => (
     {text}
   </div>
 );
+
 export default Caption;
