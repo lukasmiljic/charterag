@@ -5,9 +5,9 @@ import styles from './Footer.module.scss';
 const Footer = () => (
   <footer className={styles.container}>
     <div className={styles.firstrow}>
-      <Image src={'/branding/charterag_logo.svg'} alt="charterag" width={216} height={50} />
+      <Image src="/branding/charterag_logo.svg" alt="charterag" width={216} height={50} />
       <div className={styles.arrowup}>
-        <Image src={'icons/Arrow.svg'} alt="top" width={14} height={18} />
+        <Image src="icons/Arrow.svg" alt="top" width={14} height={18} />
       </div>
     </div>
     <div className={styles.secondrow}>
@@ -40,13 +40,13 @@ const Footer = () => (
       </div>
       <div className={styles.socialmedia}>
         <div className={styles.iconframe}>
-          <Image src={'/icons/Instagram.svg'} alt="ig" width={16} height={16} />
+          <Image src="/icons/Instagram.svg" alt="ig" width={16} height={16} />
         </div>
         <div className={styles.iconframe}>
-          <Image src={'/icons/FacebookF.svg'} alt="ig" width={16} height={16} />
+          <Image src="/icons/FacebookF.svg" alt="ig" width={16} height={16} />
         </div>
         <div className={styles.iconframe}>
-          <Image src={'/icons/YouTube.svg'} alt="ig" width={16} height={16} />
+          <Image src="/icons/YouTube.svg" alt="ig" width={16} height={16} />
         </div>
       </div>
     </div>
