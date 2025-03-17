@@ -7,7 +7,9 @@
   align-items: center;
   min-height: 100vh;
   padding: 0 10.625rem;
-  padding-top: 112px;
+
+  // add this back in after removing section header padding top
+  // padding-top: 112px;
 }
 
 .container h2 {
@@ -24,6 +26,7 @@
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, auto);
   gap: 13px;
+  padding-top: 95px;
 }
 
 .gridimage {
