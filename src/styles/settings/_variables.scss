@@ -45,3 +45,6 @@ $breakpoints: (
   xl: 1280px,
 );
 $max-width: map.get($breakpoints, 'lg');
+
+// Sizes
+$border-radius: 10px;
