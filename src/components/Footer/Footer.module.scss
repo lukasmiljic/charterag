@@ -1,10 +1,15 @@
 @use '@/styles/settings/variables' as *;
 @use '@/styles/utils/rem-calc' as *;
 
-.container {
+.footer {
   background-color: $green-vogue-950;
   color: $white;
-  padding: rem-calc(64);
+  padding: rem-calc(64) 0;
+}
+
+.container {
+  max-width: $max-width;
+  margin: 0 auto;
 }
 
 .firstrow {
@@ -69,5 +74,5 @@
 
 .legallinks {
   display: flex;
-  gap: 64px;
+  gap: 4rem;
 }
