@@ -19,13 +19,17 @@ const RoutesCards = () => (
           <h4 className="semibold">Party route</h4>
         </div>
         <div className={styles.bars}>
-          <div className={styles.bar}>
+          <div className={styles.bararea}>
             <p className="body1">Party</p>
-            <Bar percentage={90} />
+            <div className={styles.barcontainer}>
+              <Bar percentage={90} />
+            </div>
           </div>
-          <div className={styles.bar}>
+          <div className={styles.bararea}>
             <p className="body1">Adventure</p>
-            <Bar percentage={30} />
+            <div className={styles.barcontainer}>
+              <Bar percentage={30} />
+            </div>
           </div>
         </div>
       </div>
@@ -45,13 +49,17 @@ const RoutesCards = () => (
           <h4 className="semibold">Ultra route</h4>
         </div>
         <div className={styles.bars}>
-          <div className={styles.bar}>
+          <div className={styles.bararea}>
             <p className="body1">Party</p>
-            <Bar percentage={95} />
+            <div className={styles.barcontainer}>
+              <Bar percentage={95} />
+            </div>
           </div>
-          <div className={styles.bar}>
-            <p className="body1">Adventure</p>
-            <Bar percentage={10} />
+          <div className={styles.bararea}>
+            <p className="body1">Party</p>
+            <div className={styles.barcontainer}>
+              <Bar percentage={10} />
+            </div>
           </div>
         </div>
       </div>
@@ -71,13 +79,17 @@ const RoutesCards = () => (
           <h4 className="semibold">Greece route</h4>
         </div>
         <div className={styles.bars}>
-          <div className={styles.bar}>
+          <div className={styles.bararea}>
             <p className="body1">Party</p>
-            <Bar percentage={40} />
+            <div className={styles.barcontainer}>
+              <Bar percentage={40} />
+            </div>
           </div>
-          <div className={styles.bar}>
+          <div className={styles.bararea}>
             <p className="body1">Adventure</p>
-            <Bar percentage={80} />
+            <div className={styles.barcontainer}>
+              <Bar percentage={80} />
+            </div>
           </div>
         </div>
       </div>
@@ -97,13 +109,17 @@ const RoutesCards = () => (
           <h4 className="semibold">Adventure route</h4>
         </div>
         <div className={styles.bars}>
-          <div className={styles.bar}>
+          <div className={styles.bararea}>
             <p className="body1">Party</p>
-            <Bar percentage={10} />
+            <div className={styles.barcontainer}>
+              <Bar percentage={10} />
+            </div>
           </div>
-          <div className={styles.bar}>
+          <div className={styles.bararea}>
             <p className="body1">Adventure</p>
-            <Bar percentage={90} />
+            <div className={styles.barcontainer}>
+              <Bar percentage={90} />
+            </div>
           </div>
         </div>
       </div>
