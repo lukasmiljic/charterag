@@ -1,5 +1,6 @@
 @use '@/styles/settings/variables' as *;
 @use '@/styles/utils/rem-calc' as *;
+@use '@/styles/mixins/breakpoints' as *;
 
 .footer {
   background-color: $green-vogue-950;
@@ -10,17 +11,24 @@
 .container {
   max-width: $max-width;
   margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  @include media(xl) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .firstrow {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 90px;
+  padding-bottom: 5.625rem;
 }
 
 .arrowup {
-  width: 50px;
-  height: 50px;
+  width: 3.125rem;
+  height: 3.125rem;
   background-color: $white;
   display: grid;
   place-items: center;
@@ -29,32 +37,48 @@
 
 .secondrow {
   display: flex;
+  flex-direction: column;
+  width: 100%;
   justify-content: space-between;
-  padding-bottom: 82px;
+  gap: 1rem;
+  padding-bottom: 5rem;
+
+  @include media(sm) {
+    flex-direction: row;
+  }
 }
 
 .links {
   display: flex;
-  gap: 120px;
+  gap: 1rem;
   text-align: left;
+  justify-content: space-between;
+  width: 100%;
+
+  @include media(sm, lg) {
+    width: 60%;
+  }
+  @include media(lg) {
+    width: 40%;
+  }
 }
 
 .links p {
-  padding-bottom: 22px;
+  padding-bottom: rem-calc(22);
 }
 
 .links ul li {
-  padding-bottom: 12px;
+  padding-bottom: 0.75rem;
 }
 
 .socialmedia {
   display: flex;
-  gap: 8px;
+  gap: 0.5rem;
 }
 
 .iconframe {
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  height: 2.5rem;
   border-radius: 100%;
   display: grid;
   place-items: center;
@@ -64,15 +88,21 @@
 .thirdrow {
   border-top: 1px solid $green-vogue-900;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   justify-content: space-between;
-  padding-top: 56px;
-}
+  padding-top: 3.5rem;
 
-.copyrighttext {
-  text-align: left;
+  @include media(sm) {
+    flex-direction: row;
+    text-align: left;
+  }
 }
 
 .legallinks {
   display: flex;
-  gap: 4rem;
+  justify-content: space-between;
+  width: 25%;
+  gap: 1rem;
 }
