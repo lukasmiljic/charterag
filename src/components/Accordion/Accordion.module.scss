@@ -4,13 +4,17 @@
 .accordion {
   margin-top: rem-calc(80);
   width: 100%;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: rem-calc(40);
 }
 
 .drawer {
   background-color: $green-vogue-200;
   color: $green-vogue-950;
   border-radius: $border-radius;
-  padding: 2rem 2rem 4rem;
+  padding: 2rem;
   width: 100%;
 }
 
@@ -18,11 +22,15 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 1rem;
 }
 
-.titlebar img {
+.openIcon {
   transform: rotate(90deg);
+  transition: all 0.1s ease-out;
+}
+.closeIcon {
+  transform: rotate(-90deg);
+  transition: all 0.1s ease-out;
 }
 
 .content {
@@ -30,6 +38,15 @@
   gap: 4rem;
   position: relative;
   width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.contentClosed {
+  height: 0;
+  overflow: hidden;
+  margin: 0;
 }
 
 .contentImage {
@@ -38,10 +55,8 @@
 
 .bars {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  column-gap: rem-calc(50);
-  row-gap: rem-calc(20);
+  flex-flow: column wrap;
+  gap: rem-calc(20) rem-calc(50);
   width: 100%;
   max-height: rem-calc(276);
 }

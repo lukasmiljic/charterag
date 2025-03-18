@@ -1,13 +1,5 @@
 @use '@/styles/settings/variables' as *;
 
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0 10.625rem;
-  padding-bottom: 127px;
-}
-
-.sectionheadercontainer {
-  max-width: 608px;
+.routesSection {
+  padding: 4rem 0 8rem;
 }
