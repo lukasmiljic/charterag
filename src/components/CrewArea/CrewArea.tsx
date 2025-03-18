@@ -1,3 +1,5 @@
+import { PropsWithChildren } from 'react';
+
 import Image from 'next/image';
 
 import Button from '@/components/Button';
@@ -13,10 +15,19 @@ interface CrewAreaProps {
   reverse?: boolean;
 }
 
-const CrewArea = ({ reverse, carouselTitle, carouselText, title, body, buttonText }: CrewAreaProps) => (
+const CrewArea = ({
+  reverse,
+  carouselTitle,
+  carouselText,
+  title,
+  body,
+  buttonText,
+  children,
+}: PropsWithChildren<CrewAreaProps>) => (
   <div className={`${styles.crewArea} ${reverse ? styles.reverse : ''}`}>
     <div>
       <div />
+      {children}
       <div className={styles.carouselText}>
         <p className="subtitle1 semibold">{carouselTitle}</p>
         <p className="body1">{carouselText}</p>

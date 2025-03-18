@@ -24,6 +24,7 @@ const Carousel = ({ images }: CarouselProps) => {
   const handleKeyDown = (event: React.KeyboardEvent<HTMLDivElement>, direction: 'next' | 'prev') => {
     if (event.key === 'Enter' || event.key === ' ') {
       event.preventDefault();
+
       if (direction === 'next') {
         showNextImage();
       } else {
