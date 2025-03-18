@@ -5,9 +5,13 @@ import Header from '@/components/Header';
 
 import styles from './Layout.module.scss';
 
-const Layout = ({ children }: PropsWithChildren) => (
+interface LayoutProps {
+  hero?: boolean;
+}
+
+const Layout = ({ children, hero }: PropsWithChildren<LayoutProps>) => (
   <>
-    <Header />
+    <Header hero={hero} />
     <main className={styles.main}>{children}</main>
     <Footer />
   </>

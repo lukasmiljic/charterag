@@ -12,7 +12,7 @@ const FlexiblePaymentSection = dynamic(() => import('@/views/home/FlexiblePaymen
 const BucketListSection = dynamic(() => import('@/views/home/BucketListSection'));
 
 const HomePage = () => (
-  <Layout>
+  <Layout hero>
     <HeroSection />
     <ExperienceSection />
     <RoutesSection />

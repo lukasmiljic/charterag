@@ -5,11 +5,21 @@ import Button from '@/components/Button';
 
 import styles from './Header.module.scss';
 
-const Header = () => (
-  <div className={styles.container}>
+interface HeaderProps {
+  hero?: boolean;
+}
+
+const Header = ({ hero }: HeaderProps) => (
+  <div className={`${(hero && styles.heroContainer) || styles.container}`}>
     <header className={styles.header}>
       <Link href="/">
-        <Image src="branding/charterag_logo.svg" width={150} height={30} alt="charterag logo" />
+        <Image
+          className={`${hero ? '' : styles.logo}`}
+          src="branding/charterag_logo.svg"
+          width={150}
+          height={30}
+          alt="charterag logo"
+        />
       </Link>
       <ul className={styles.navigationlist}>
         <li>

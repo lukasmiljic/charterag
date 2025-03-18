@@ -1,8 +1,16 @@
 @use '@/styles/settings/variables' as *;
 @use '@/styles/utils/rem-calc' as *;
 
-.container {
+.heroContainer {
   color: $white;
+  padding: rem-calc(32) rem-calc(170);
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+}
+
+.container {
+  color: $green-vogue-950;
   padding: rem-calc(32) rem-calc(170);
   position: absolute;
   z-index: 10;
@@ -13,6 +21,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.logo {
+  filter: brightness(0) saturate(100%) invert(15%) sepia(10%) saturate(6755%) hue-rotate(178deg) brightness(89%)
+    contrast(101%);
 }
 
 .navigationlist {
