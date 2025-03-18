@@ -15,7 +15,7 @@ const Header = ({ hero }: HeaderProps) => (
       <Link href="/">
         <Image
           className={`${hero ? '' : styles.logo}`}
-          src="branding/charterag_logo.svg"
+          src="/branding/charterag_logo.svg"
           width={150}
           height={30}
           alt="charterag logo"

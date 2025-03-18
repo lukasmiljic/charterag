@@ -8,7 +8,7 @@ const Footer = () => (
       <div className={styles.firstrow}>
         <Image src="/branding/charterag_logo.svg" alt="charterag" width={216} height={50} />
         <div className={styles.arrowup}>
-          <Image src="icons/Arrow.svg" alt="top" width={14} height={18} />
+          <Image src="/icons/Arrow.svg" alt="top" width={14} height={18} />
         </div>
       </div>
       <div className={styles.secondrow}>
