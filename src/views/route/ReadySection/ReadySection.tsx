@@ -13,7 +13,7 @@ const ReadySection = () => (
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit pariatur laudantium iusto voluptatem
         numquam dignissimos eligendi!
       </p>
-      <Button color="white" text="explore our destinations" />
+      <Button round color="white" text="explore our destinations" />
     </div>
   </section>
 );

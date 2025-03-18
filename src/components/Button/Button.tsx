@@ -22,14 +22,13 @@ const Button = ({ children, text, route, color, round }: PropsWithChildren<Butto
     }
   };
 
+  const buttonStyle = {
+    ...(color && { backgroundColor: color }),
+    ...(round && { borderRadius: '50px' }),
+  };
+
   return (
-    <button
-      className={styles.button}
-      type="button"
-      onClick={handleClick}
-      {...(color && { style: { backgroundColor: color } })}
-      {...(round && { style: { borderRadius: '100%' } })}
-    >
+    <button className={styles.button} type="button" onClick={handleClick} style={buttonStyle}>
       {text}
       {children}
     </button>
