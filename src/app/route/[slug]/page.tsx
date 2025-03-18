@@ -1,6 +1,7 @@
 import dynamic from 'next/dynamic';
 
 import Layout from '@/components/Layout';
+import Routes from '@/data/data';
 
 const HeroSection = dynamic(() => import('@/views/route/HeroSection'));
 const HighlightsSection = dynamic(() => import('@/views/route/HighlightsSection'));
@@ -18,10 +19,19 @@ interface RoutePageProps {
 const RoutePage = async ({ params }: RoutePageProps) => {
   const { slug } = await params;
 
+  const route = Routes.find(x => x.title.toLowerCase() === slug);
+
+  if (!route) {
+    return (
+      <Layout>
+        <h1>Route not found!</h1>
+      </Layout>
+    );
+  }
+
   return (
     <Layout>
-      {/* <p>Route page: {slug}</p> */}
-      <HeroSection />
+      <HeroSection route={route} />
       <HighlightsSection />
       <RoutesSection />
       <CrewSection />
