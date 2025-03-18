@@ -1,22 +1,19 @@
 @use '@/styles/settings/variables' as *;
+@use '@/styles/utils/rem-calc' as *;
 
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-top: 112px;
-  padding-bottom: 80px;
+.bucketsection {
+  padding: rem-calc(112) 0 rem-calc(80);
 }
 
-.sectionheadercontainer {
-  width: 464px;
+.bucketlistSectionHeader {
+  margin-top: 4rem;
+  width: rem-calc(464);
 }
 
 .buttons {
   display: flex;
-  gap: 16px;
-  padding-top: 37px;
+  gap: 1rem;
+  padding-top: 2rem;
 }
 
 .images {
@@ -25,7 +22,7 @@
 }
 
 .images img {
-  border-radius: 10px;
+  border-radius: $border-radius;
   object-fit: cover;
   box-shadow:
     -0.81px 2.43px 5.66px 0 #0000000f,
@@ -40,7 +37,7 @@
 }
 
 .image2 {
-  margin-top: 169px;
+  margin-top: rem-calc(169);
   position: relative;
   z-index: 5;
 }

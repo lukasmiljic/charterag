@@ -1,18 +1,13 @@
 import Image from 'next/image';
 
-import Bar from '../Bar';
+import Bar from '@/components/Bar';
+
 import styles from './RoutesCards.module.scss';
 
 const RoutesCards = () => (
   <div className={styles.cards}>
     <div className={styles.card}>
-      <Image
-        className={styles.bgimage}
-        src="/sections/routes/party.png"
-        alt="card background image"
-        width={265}
-        height={370}
-      />
+      <Image className={styles.bgimage} src="/sections/routes/party.png" alt="card background image" fill />
       <div className={styles.text}>
         <div className={styles.nameandprice}>
           <p className="subtitle">From €710/person</p>
@@ -36,13 +31,7 @@ const RoutesCards = () => (
     </div>
 
     <div className={styles.card}>
-      <Image
-        className={styles.bgimage}
-        src="/sections/routes/ultra.png"
-        alt="card background image"
-        width={265}
-        height={370}
-      />
+      <Image className={styles.bgimage} src="/sections/routes/ultra.png" alt="card background image" fill />
       <div className={styles.text}>
         <div className={styles.nameandprice}>
           <p className="subtitle">From €792/person</p>
@@ -66,13 +55,7 @@ const RoutesCards = () => (
     </div>
 
     <div className={styles.card}>
-      <Image
-        className={styles.bgimage}
-        src="/sections/routes/greece.png"
-        alt="card background image"
-        width={265}
-        height={370}
-      />
+      <Image className={styles.bgimage} src="/sections/routes/greece.png" alt="card background image" fill />
       <div className={styles.text}>
         <div className={styles.nameandprice}>
           <p className="subtitle">From €792/person</p>
@@ -96,13 +79,7 @@ const RoutesCards = () => (
     </div>
 
     <div className={styles.card}>
-      <Image
-        className={styles.bgimage}
-        src="/sections/routes/adventure.png"
-        alt="card background image"
-        width={265}
-        height={370}
-      />
+      <Image className={styles.bgimage} src="/sections/routes/adventure.png" alt="card background image" fill />
       <div className={styles.text}>
         <div className={styles.nameandprice}>
           <p className="subtitle">From €792/person</p>

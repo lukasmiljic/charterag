@@ -1,18 +1,16 @@
 @use '@/styles/settings/variables' as *;
 @use '@/styles/utils/rem-calc' as *;
 
-.container {
-  color: $white;
-  padding: rem-calc(32) rem-calc(170);
-  position: absolute;
-  z-index: 10;
-  width: 100%;
-}
-
 .header {
+  position: absolute;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: rem-calc(32) 0;
+  color: $white;
+  z-index: 10;
+  width: 100%;
 }
 
 .navigationlist {

@@ -1,41 +1,53 @@
 @use '@/styles/settings/variables' as *;
+@use '@/styles/mixins/breakpoints' as *;
+@use '@/styles/utils/rem-calc' as *;
 
 .cards {
+  position: relative;
   display: flex;
   flex-direction: column;
-  gap: 78px;
+  gap: rem-calc(78);
   width: 100%;
-  padding-top: 120px;
 }
 
 .card {
   position: relative;
   width: 100%;
-  height: 440px;
+  height: rem-calc(440);
   flex-shrink: 0;
-  border-radius: 10px;
+  border-radius: $border-radius;
   background: $green-vogue-900;
-  padding: 46px 55px;
+  padding: rem-calc(46) rem-calc(55);
   cursor: pointer;
   overflow: hidden;
   display: flex;
   flex-direction: column-reverse;
 }
 
-.card:hover {
-  background-size: 105%;
-}
-
 .card::before {
   position: absolute;
   content: '';
-  height: 150px;
+  height: 25%;
   width: 100%;
   bottom: 0;
   left: 0;
   opacity: 0.9;
   background: linear-gradient(180deg, rgb(0 0 0 / 0%) 0%, #000 100%);
   z-index: 5;
+}
+
+.bgimage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.1s ease-out;
+  object-fit: cover;
+}
+
+.card:hover .bgimage {
+  transform: scale(105%);
 }
 
 .text {
@@ -48,23 +60,21 @@
   align-items: center;
 }
 
-.bgimage {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transition: transform 0.1s ease-out;
-}
-
-.card:hover .bgimage {
-  transform: scale(105%);
-}
-
 .nameandprice {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: rem-calc(24);
+}
+
+.bars {
+  display: none;
+  flex-direction: column;
+  gap: 20px;
+  width: 290px;
+
+  @include media(sm) {
+    display: flex;
+  }
 }
 
 .bararea {
@@ -72,13 +82,6 @@
   width: 100%;
   justify-content: space-between;
   align-items: center;
-}
-
-.bars {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  width: 290px;
 }
 
 .barcontainer {

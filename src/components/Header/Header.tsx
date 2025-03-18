@@ -6,7 +6,7 @@ import Button from '@/components/Button';
 import styles from './Header.module.scss';
 
 const Header = () => (
-  <div className={styles.container}>
+  <div className="centercontainer">
     <header className={styles.header}>
       <Link href="/">
         <Image src="branding/charterag_logo.svg" width={150} height={30} alt="charterag logo" />

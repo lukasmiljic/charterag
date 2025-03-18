@@ -4,8 +4,9 @@ import SectionHeader from '@/components/SectionHeader';
 import styles from './PaymentSection.module.scss';
 
 const PaymentSection = () => (
-  <section className={styles.container}>
+  <section className="centercontainer">
     <SectionHeader
+      className={styles.paymentSectionHeader}
       caption="payment"
       header="You don't have to break the bank"
       paragraph="See how lorem ipsum dolor sit"
