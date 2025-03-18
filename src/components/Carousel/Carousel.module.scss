@@ -1,0 +1,56 @@
+@use '@/styles/settings/variables' as *;
+@use '@/styles/utils/rem-calc' as *;
+
+.carousel {
+  position: relative;
+  width: rem-calc(555);
+  height: rem-calc(500);
+  border-radius: $border-radius;
+  overflow: hidden;
+}
+
+.allImages {
+  position: relative;
+  width: 555px;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+}
+
+.image {
+  object-fit: cover;
+  width: 555px;
+  height: 505px;
+  flex-shrink: 0;
+  transition: translate 0.3s ease-out;
+}
+
+.buttons {
+  position: absolute;
+  top: 0;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: rem-calc(32px);
+}
+
+.buttonContainer {
+  width: 100%;
+  padding: 39px;
+}
+
+.button {
+  background: $white;
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+  display: grid;
+  place-content: center;
+}
+
+.prev .chevron {
+  transform: rotate(180deg);
+}
