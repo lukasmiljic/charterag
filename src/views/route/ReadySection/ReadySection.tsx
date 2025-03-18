@@ -15,7 +15,7 @@ const ReadySection = () => (
       </p>
       <Button round color="white" text="explore our destinations">
         <div className={styles.iconborder}>
-          <Image className={styles.chevron} src={'/icons/Chevron.svg'} alt="" width={8} height={8}></Image>
+          <Image className={styles.chevron} src="/icons/Chevron.svg" alt="" width={8} height={8} />
         </div>
       </Button>
     </div>
