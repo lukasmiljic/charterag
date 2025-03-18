@@ -1,3 +1,5 @@
+import RouteInfoCard from '@/components/RouteInfoCard';
+
 import styles from './HeroSection.module.scss';
 
 const HeroSection = () => (
@@ -10,7 +12,7 @@ const HeroSection = () => (
         </div>
       </div>
     </div>
-    <div className="container">
+    <div className={`${styles.infoContainer} container`}>
       <div className={styles.text}>
         <p className="subtitle">
           From mountains and canyons to fjord-like bays, nostalgic Old towns to most stunning beaches. Get to now
@@ -23,6 +25,8 @@ const HeroSection = () => (
           opened, Chic Lazure marina.
         </p>
       </div>
+
+      <RouteInfoCard />
     </div>
   </section>
 );
