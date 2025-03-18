@@ -1,0 +1,35 @@
+@use '@/styles/settings/variables' as *;
+@use '@/styles/utils/rem-calc' as *;
+@use '@/styles/mixins/breakpoints' as *;
+
+.highlightsSection {
+  padding: 4rem 0;
+}
+
+.imagegrid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  padding-top: rem-calc(95);
+
+  @include media(md) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.gridItem h5 {
+  margin-bottom: 1rem;
+}
+
+.gridimage {
+  border-radius: $border-radius;
+  object-fit: cover;
+  max-width: 331px;
+  height: 251px;
+  width: 100%;
+  margin-bottom: 2rem;
+  box-shadow:
+    16px 16px 32px 0px #5c6c7b1a,
+    2px 2px 6px 0px #484b570f;
+}
