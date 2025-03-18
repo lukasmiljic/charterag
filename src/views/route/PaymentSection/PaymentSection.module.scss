@@ -1,0 +1,59 @@
+@use '@/styles/settings/variables' as *;
+@use '@/styles/utils/rem-calc' as *;
+
+// .flexiblesection {
+//   color: $white;
+//   background-color: $green-vogue-950;
+//   padding: rem-calc(112) 0 rem-calc(33);
+// }
+
+.cards {
+  margin-top: rem-calc(115);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: rem-calc(32) rem-calc(64);
+  color: $green-vogue-950;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: rem-calc(272);
+  height: rem-calc(220);
+  background-color: $green-vogue-200;
+  border-radius: $border-radius;
+  padding: rem-calc(30);
+  gap: rem-calc(20);
+}
+
+.moneyicon {
+  filter: brightness(0) saturate(100%) invert(15%) sepia(10%) saturate(6755%) hue-rotate(178deg) brightness(89%)
+    contrast(101%);
+}
+
+.moneycircle {
+  display: grid;
+  place-content: center;
+  position: relative;
+  height: rem-calc(56);
+  width: rem-calc(56);
+  background-color: $green-vogue-100;
+  border-radius: 100%;
+}
+
+.moneycircle::after {
+  content: attr(data-number);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  font-weight: 600;
+  font-size: 16px;
+  color: $green-vogue-950;
+}
+
+.barcontainer {
+  height: 0.5rem;
+}
