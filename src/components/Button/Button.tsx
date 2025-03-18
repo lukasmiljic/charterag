@@ -20,7 +20,11 @@ const Button = ({ children, text, route, color, textColor, round, className }: P
 
   const handleClick = () => {
     if (route) {
-      router.push(route);
+      if (route.startsWith('http')) {
+        window.location.href = route;
+      } else {
+        router.push(route);
+      }
     }
   };
 
