@@ -1,12 +1,8 @@
 @use '@/styles/settings/variables' as *;
 @use '@/styles/utils/rem-calc' as *;
 
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0 10.625rem;
-  padding-bottom: 127px;
+.heroSection {
+  padding-bottom: 4rem;
 }
 
 .bgImage {
@@ -42,4 +38,12 @@
   position: absolute;
   bottom: 0;
   background: linear-gradient(0deg, #062949 5.32%, rgb(6 41 73 / 0%) 90.36%);
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 4rem;
+  max-width: rem-calc(633);
 }
