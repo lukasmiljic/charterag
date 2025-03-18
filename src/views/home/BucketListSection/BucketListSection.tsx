@@ -37,8 +37,8 @@ const BucketListSection = () => (
       paragraph="Lorem ipsum dolor sit amet consectetur. Tellus lectus non purus odio amet"
     />
     <div className={styles.buttons}>
-      <Button text="explore" />
-      <Button text="follow us" color="white" />
+      <Button text="explore" route="/explore" />
+      <Button text="follow us" color="white" route="https://www.instagram.com/" />
     </div>
   </section>
 );

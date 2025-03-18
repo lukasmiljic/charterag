@@ -10,7 +10,7 @@ interface HeaderProps {
 }
 
 const Header = ({ hero }: HeaderProps) => (
-  <div className={`${(hero && styles.heroContainer) || styles.container}`}>
+  <div id="top" className={`${(hero && styles.heroContainer) || styles.container}`}>
     <header className={styles.header}>
       <Link href="/">
         <Image

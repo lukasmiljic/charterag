@@ -17,6 +17,9 @@
 }
 
 .card {
+  border: unset;
+  display: flex;
+  color: $white;
   position: relative;
   width: 100%;
   height: rem-calc(200);
