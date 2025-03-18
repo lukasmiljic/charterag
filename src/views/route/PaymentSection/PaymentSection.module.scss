@@ -1,12 +1,6 @@
 @use '@/styles/settings/variables' as *;
 @use '@/styles/utils/rem-calc' as *;
 
-// .flexiblesection {
-//   color: $white;
-//   background-color: $green-vogue-950;
-//   padding: rem-calc(112) 0 rem-calc(33);
-// }
-
 .cards {
   margin-top: rem-calc(115);
   display: flex;

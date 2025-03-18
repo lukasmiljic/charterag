@@ -1,0 +1,18 @@
+@use '@/styles/settings/variables' as *;
+@use '@/styles/utils/rem-calc' as *;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10.625rem;
+  padding-bottom: 127px;
+}
+
+.heroSection {
+  margin-top: rem-calc(48);
+  background-image: url('/sections/routes/party.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: rem-calc(510);
+}
