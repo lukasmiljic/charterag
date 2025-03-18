@@ -9,10 +9,37 @@
   padding-bottom: 127px;
 }
 
-.heroSection {
+.bgImage {
+  position: relative;
   margin-top: rem-calc(48);
-  background-image: url('/sections/routes/party.png');
+  background-image: url('/sections/routeHero/bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   height: rem-calc(510);
+  padding: rem-calc(64) 0;
+  color: $white;
+}
+
+.contentContainer {
+  height: 100%;
+}
+
+.bgImage .content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100%;
+  justify-content: end;
+  align-items: start;
+  z-index: 10;
+  max-width: rem-calc(467);
+}
+
+.bgImage::after {
+  content: '';
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(0deg, #062949 5.32%, rgb(6 41 73 / 0%) 90.36%);
 }
