@@ -10,10 +10,12 @@ interface ButtonProps {
   text: string;
   route?: string;
   color?: string;
+  textColor?: string;
   round?: boolean;
+  className?: string;
 }
 
-const Button = ({ children, text, route, color, round }: PropsWithChildren<ButtonProps>) => {
+const Button = ({ children, text, route, color, textColor, round, className }: PropsWithChildren<ButtonProps>) => {
   const router = useRouter();
 
   const handleClick = () => {
@@ -24,11 +26,12 @@ const Button = ({ children, text, route, color, round }: PropsWithChildren<Butto
 
   const buttonStyle = {
     ...(color && { backgroundColor: color }),
+    ...(textColor && { color: textColor }),
     ...(round && { borderRadius: '50px' }),
   };
 
   return (
-    <button className={styles.button} type="button" onClick={handleClick} style={buttonStyle}>
+    <button className={`${styles.button} ${className || ''}`} type="button" onClick={handleClick} style={buttonStyle}>
       {text}
       {children}
     </button>
