@@ -1,0 +1,52 @@
+@use '@/styles/settings/variables' as *;
+@use '@/styles/utils/rem-calc' as *;
+
+.accordion {
+  margin-top: rem-calc(80);
+  width: 100%;
+}
+
+.drawer {
+  background-color: $green-vogue-200;
+  color: $green-vogue-950;
+  border-radius: $border-radius;
+  padding: 2rem 2rem 4rem;
+  width: 100%;
+}
+
+.titlebar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.titlebar img {
+  transform: rotate(90deg);
+}
+
+.content {
+  display: flex;
+  gap: 4rem;
+  position: relative;
+  width: 100%;
+}
+
+.contentImage {
+  border-radius: $border-radius;
+}
+
+.bars {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  column-gap: rem-calc(50);
+  row-gap: rem-calc(20);
+  width: 100%;
+  max-height: rem-calc(276);
+}
+
+.barContainer {
+  margin-top: 10px;
+  height: rem-calc(6);
+}
