@@ -1,13 +1,17 @@
 @use '@/styles/settings/variables' as *;
+@use '@/styles/utils/rem-calc' as *;
 
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0 10.625rem;
-  padding-bottom: 127px;
+.crewSection {
+  padding: 4rem 0 8rem;
 }
 
-.sectionheadercontainer {
-  max-width: 608px;
+.crewSectionHeader {
+  margin-bottom: rem-calc(112);
+}
+
+.crewAreas {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: rem-calc(112);
 }
