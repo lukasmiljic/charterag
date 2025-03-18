@@ -30,3 +30,13 @@
 .content p {
   margin-bottom: 2rem;
 }
+
+.iconborder {
+  display: grid;
+  place-items: center;
+  margin-left: 1ch;
+  width: 29px;
+  height: 29px;
+  background-color: $green-vogue-50;
+  border-radius: 100%;
+}

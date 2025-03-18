@@ -1,8 +1,8 @@
 @use '@/styles/settings/variables' as *;
 
 .button {
-  background-color: $yellow;
   color: $green-vogue-950;
+  background-color: $yellow;
   outline: none;
   border: none;
   text-transform: uppercase;
@@ -14,4 +14,6 @@
   font-weight: 500;
   cursor: pointer;
   width: fit-content;
+  display: flex;
+  align-items: center;
 }
