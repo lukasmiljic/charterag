@@ -7,23 +7,14 @@ import Button from '@/components/Button';
 import styles from './CrewArea.module.scss';
 
 interface CrewAreaProps {
-  carouselTitle: string;
-  carouselText: string;
   title: string;
   body: string;
   buttonText: string;
+  buttonRoute: string;
   reverse?: boolean;
 }
 
-const CrewArea = ({
-  reverse,
-  carouselTitle,
-  carouselText,
-  title,
-  body,
-  buttonText,
-  children,
-}: PropsWithChildren<CrewAreaProps>) => (
+const CrewArea = ({ reverse, title, body, buttonText, buttonRoute, children }: PropsWithChildren<CrewAreaProps>) => (
   <div className={`${styles.crewArea} ${reverse ? styles.reverse : ''}`}>
     <div>
       <div />
