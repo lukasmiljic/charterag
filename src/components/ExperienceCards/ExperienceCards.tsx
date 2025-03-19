@@ -3,6 +3,8 @@
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 
+import Routes, { Sections } from '@/data/routes';
+
 import styles from './ExperienceCards.module.scss';
 
 const ExperienceCards = () => {
@@ -12,24 +14,21 @@ const ExperienceCards = () => {
     router.push(route);
   };
 
+  const experienceRoutes = Routes.filter(x => x.section.includes(Sections.Experience));
+
   return (
     <div className={styles.cards}>
-      <button type="button" className={styles.card} onClick={() => navigateTo('/route/sail')}>
-        <Image className={styles.bgimage} src="/sections/experience/sail.png" alt="card background image" fill />
-        <h4>Sail</h4>
-      </button>
-      <button type="button" className={styles.card} onClick={() => navigateTo('/route/party')}>
-        <Image className={styles.bgimage} src="/sections/experience/party.png" alt="card background image" fill />
-        <h4>Party</h4>
-      </button>
-      <button type="button" className={styles.card} onClick={() => navigateTo('/route/explore')}>
-        <Image className={styles.bgimage} src="/sections/experience/explore.png" alt="card background image" fill />
-        <h4>Explore</h4>
-      </button>
-      <button type="button" className={styles.card} onClick={() => navigateTo('/route/relax')}>
-        <Image className={styles.bgimage} src="/sections/experience/relax.png" alt="card background image" fill />
-        <h4>Relax</h4>
-      </button>
+      {experienceRoutes.map(route => (
+        <button
+          type="button"
+          className={styles.card}
+          key={route.title}
+          onClick={() => navigateTo(`/route/${route.slug}`)}
+        >
+          <Image className={styles.bgimage} src={route.coverImage} alt="card background image" fill />
+          <h4>{route.title}</h4>
+        </button>
+      ))}
     </div>
   );
 };
