@@ -7,6 +7,7 @@ import Image from 'next/image';
 import Bar from '@/components/Bar';
 
 import styles from './Accordion.module.scss';
+import Drawer from './Drawer';
 
 const Accordion = () => {
   const [selected, setSelected] = useState(1);
@@ -26,91 +27,37 @@ const Accordion = () => {
     }
   };
 
+  const bars = [
+    { label: 'Organised parties', percentage: 100 },
+    { label: 'Sailsweek regatta', percentage: 100 },
+    { label: 'Swim stops', percentage: 60 },
+    { label: 'Sightseeing', percentage: 50 },
+    { label: 'Local cuisine', percentage: 0 },
+    { label: 'Wine tasting', percentage: 0 },
+    { label: 'Island hopping', percentage: 20 },
+    { label: 'Exploring cities', percentage: 10 },
+    { label: 'Cliff jumping', percentage: 40 },
+  ];
+
+  const routes = [
+    { title: 'Ultra route', image: '/sections/routeAccordion/ultra.png' },
+    { title: 'Party route', image: '/sections/routes/party.png' },
+    { title: 'Greece route', image: '/sections/routes/greece.png' },
+    { title: 'Adventure route', image: '/sections/routes/adventure.png' },
+  ];
+
   return (
     <div className={styles.accordion}>
-      <div
-        className={styles.drawer}
-        role="button"
-        tabIndex={0}
-        onKeyDown={event => handleKeyDown(event, 1)}
-        onClick={() => toggleDrawer(1)}
-      >
-        <div className={styles.titlebar}>
-          <p className="subtitle semibold">Ultra route</p>
-          <Image
-            className={`${selected === 1 ? styles.closeIcon : styles.openIcon}`}
-            src="/icons/Chevron.svg"
-            alt=""
-            width={16}
-            height={16}
-          />
+      {routes.map((route, i) => (
+        <div
+          role="button"
+          tabIndex={0}
+          onKeyDown={event => handleKeyDown(event, i)}
+          onClick={() => toggleDrawer(i + 1)}
+        >
+          <Drawer title={route.title} image={route.image} selected={selected === i + 1} bars={bars} />
         </div>
-        <div className={`${selected === 1 ? styles.content : styles.contentClosed}`}>
-          <Image
-            className={styles.contentImage}
-            src="/sections/routeAccordion/ultra.png"
-            alt="Ultra background image"
-            width={400}
-            height={276}
-          />
-          <div className={styles.bars}>
-            <div className={styles.barArea}>
-              <p className="body1">Organised parties</p>
-              <div className={styles.barContainer}>
-                <Bar percentage={10} background="white" foreground="#062949" />
-              </div>
-            </div>
-            <div className={styles.barArea}>
-              <p className="body1">Organised parties</p>
-              <div className={styles.barContainer}>
-                <Bar percentage={10} background="white" foreground="#062949" />
-              </div>
-            </div>
-            <div className={styles.barArea}>
-              <p className="body1">Organised parties</p>
-              <div className={styles.barContainer}>
-                <Bar percentage={10} background="white" foreground="#062949" />
-              </div>
-            </div>
-            <div className={styles.barArea}>
-              <p className="body1">Organised parties</p>
-              <div className={styles.barContainer}>
-                <Bar percentage={10} background="white" foreground="#062949" />
-              </div>
-            </div>
-            <div className={styles.barArea}>
-              <p className="body1">Organised parties</p>
-              <div className={styles.barContainer}>
-                <Bar percentage={10} background="white" foreground="#062949" />
-              </div>
-            </div>
-            <div className={styles.barArea}>
-              <p className="body1">Organised parties</p>
-              <div className={styles.barContainer}>
-                <Bar percentage={10} background="white" foreground="#062949" />
-              </div>
-            </div>
-            <div className={styles.barArea}>
-              <p className="body1">Organised parties</p>
-              <div className={styles.barContainer}>
-                <Bar percentage={10} background="white" foreground="#062949" />
-              </div>
-            </div>
-            <div className={styles.barArea}>
-              <p className="body1">Organised parties</p>
-              <div className={styles.barContainer}>
-                <Bar percentage={10} background="white" foreground="#062949" />
-              </div>
-            </div>
-            <div className={styles.barArea}>
-              <p className="body1">Organised parties</p>
-              <div className={styles.barContainer}>
-                <Bar percentage={10} background="white" foreground="#062949" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      ))}
     </div>
   );
 };
