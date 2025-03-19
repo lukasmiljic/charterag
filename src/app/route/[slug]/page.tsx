@@ -32,7 +32,7 @@ const RoutePage = async ({ params }: RoutePageProps) => {
   return (
     <Layout>
       <HeroSection route={route} />
-      <HighlightsSection />
+      <HighlightsSection highlights={route.routeHiglights} />
       <RoutesSection />
       <CrewSection />
       <PaymentSection />

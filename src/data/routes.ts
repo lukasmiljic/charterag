@@ -1,13 +1,41 @@
-interface RouteHiglight {
+export interface RouteHiglight {
   title: string;
   body: string;
   image: string;
 }
 
-export enum Sections {
-  Experience,
-  Routes,
-}
+const boilerplateHighlights = [
+  {
+    title: 'Fjord like bays',
+    body: 'Where the sea meets the mountains. Sail the Bay of Kotor, often called Europes most southernmost fjord. Towering peaks and a rocky coastline dotted with charming waterside towns will leave you breathless.',
+    image: '/sections/lifestyle/image1.png',
+  },
+  {
+    title: 'Fjord like bays',
+    body: 'Where the sea meets the mountains. Sail the Bay of Kotor, often called Europes most southernmost fjord. Towering peaks and a rocky coastline dotted with charming waterside towns will leave you breathless.',
+    image: '/sections/lifestyle/image2.png',
+  },
+  {
+    title: 'Fjord like bays',
+    body: 'Where the sea meets the mountains. Sail the Bay of Kotor, often called Europes most southernmost fjord. Towering peaks and a rocky coastline dotted with charming waterside towns will leave you breathless.',
+    image: '/sections/lifestyle/image3.png',
+  },
+  {
+    title: 'Fjord like bays',
+    body: 'Where the sea meets the mountains. Sail the Bay of Kotor, often called Europes most southernmost fjord. Towering peaks and a rocky coastline dotted with charming waterside towns will leave you breathless.',
+    image: '/sections/lifestyle/image4.png',
+  },
+  {
+    title: 'Fjord like bays',
+    body: 'Where the sea meets the mountains. Sail the Bay of Kotor, often called Europes most southernmost fjord. Towering peaks and a rocky coastline dotted with charming waterside towns will leave you breathless.',
+    image: '/sections/lifestyle/image5.png',
+  },
+  {
+    title: 'Fjord like bays',
+    body: 'Where the sea meets the mountains. Sail the Bay of Kotor, often called Europes most southernmost fjord. Towering peaks and a rocky coastline dotted with charming waterside towns will leave you breathless.',
+    image: '/sections/lifestyle/image6.png',
+  },
+];
 
 export interface Route {
   title: string;
@@ -21,6 +49,12 @@ export interface Route {
   adventurePercentage: number;
   slug: string;
   section: Sections[];
+  routeHiglights: RouteHiglight[];
+}
+
+export enum Sections {
+  Experience,
+  Routes,
 }
 
 const Routes: Route[] = [
@@ -38,6 +72,7 @@ const Routes: Route[] = [
     partyPercentage: 90,
     adventurePercentage: 30,
     section: [Sections.Routes],
+    routeHiglights: boilerplateHighlights,
   },
   {
     slug: 'party',
@@ -54,6 +89,7 @@ const Routes: Route[] = [
     partyPercentage: 95,
     adventurePercentage: 10,
     section: [Sections.Routes, Sections.Experience],
+    routeHiglights: boilerplateHighlights,
   },
   {
     slug: 'greece',
@@ -69,6 +105,7 @@ const Routes: Route[] = [
     partyPercentage: 40,
     adventurePercentage: 80,
     section: [Sections.Routes],
+    routeHiglights: boilerplateHighlights,
   },
   {
     slug: 'adventure',
@@ -84,6 +121,7 @@ const Routes: Route[] = [
     partyPercentage: 10,
     adventurePercentage: 90,
     section: [Sections.Routes],
+    routeHiglights: boilerplateHighlights,
   },
   {
     slug: 'sail',
@@ -99,6 +137,7 @@ const Routes: Route[] = [
     partyPercentage: 10,
     adventurePercentage: 10,
     section: [Sections.Experience],
+    routeHiglights: boilerplateHighlights,
   },
   {
     slug: 'explore',
@@ -114,6 +153,7 @@ const Routes: Route[] = [
     partyPercentage: 10,
     adventurePercentage: 10,
     section: [Sections.Experience],
+    routeHiglights: boilerplateHighlights,
   },
   {
     slug: 'relax',
@@ -129,6 +169,7 @@ const Routes: Route[] = [
     partyPercentage: 10,
     adventurePercentage: 10,
     section: [Sections.Experience],
+    routeHiglights: boilerplateHighlights,
   },
 ];
 
