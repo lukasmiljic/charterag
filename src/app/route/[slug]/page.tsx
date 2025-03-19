@@ -1,7 +1,7 @@
 import dynamic from 'next/dynamic';
 
 import Layout from '@/components/Layout';
-import Routes from '@/data/data';
+import Routes from '@/data/routes';
 
 const HeroSection = dynamic(() => import('@/views/route/HeroSection'));
 const HighlightsSection = dynamic(() => import('@/views/route/HighlightsSection'));
