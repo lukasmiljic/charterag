@@ -19,7 +19,9 @@ const HeroSection = ({ route }: HeroSectionProps) => (
     </div>
     <div className={`${styles.infoContainer} container`}>
       <div className={styles.text}>
-        <p className="subtitle">{route.body}</p>
+        {route.body.map(bodyText => (
+          <p className="subtitle">{bodyText}</p>
+        ))}
       </div>
 
       <RouteInfoCard />
