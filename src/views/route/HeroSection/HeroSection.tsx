@@ -1,5 +1,5 @@
 import RouteInfoCard from '@/components/RouteInfoCard';
-import { Route } from '@/data/data';
+import { Route } from '@/data/routes';
 
 import styles from './HeroSection.module.scss';
 
