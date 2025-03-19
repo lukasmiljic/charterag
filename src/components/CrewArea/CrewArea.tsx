@@ -28,10 +28,6 @@ const CrewArea = ({
     <div>
       <div />
       {children}
-      <div className={styles.carouselText}>
-        <p className="subtitle1 semibold">{carouselTitle}</p>
-        <p className="body1">{carouselText}</p>
-      </div>
     </div>
     <div className={styles.textArea}>
       <h3 className="semibold">{title}</h3>

@@ -26,6 +26,8 @@ const CrewSection = () => (
             '/sections/experience/party.png',
             '/sections/experience/relax.png',
           ]}
+          carouselTitle={['bla bla', 'test test', 'woah']}
+          carouselText={['bla bla', 'test test', 'woah']}
         />
       </CrewArea>
 
@@ -36,7 +38,17 @@ const CrewSection = () => (
         title="Solo, Cabin or Group of friends"
         body="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero saepe doloremque fugit laudantium soluta neque voluptatibus enim maxime odio aperiam ex quia ipsam odit placeat illum, repellendus veniam quam distinctio?"
         buttonText="explore our destinations"
-      />
+      >
+        <Carousel
+          images={[
+            '/sections/experience/explore.png',
+            '/sections/experience/party.png',
+            '/sections/experience/relax.png',
+          ]}
+          carouselTitle={['bla bla', 'test test', 'woah']}
+          carouselText={['bla bla', 'test test', 'woah']}
+        />
+      </CrewArea>
     </div>
   </section>
 );

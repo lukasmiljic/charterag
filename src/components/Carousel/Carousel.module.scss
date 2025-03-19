@@ -54,3 +54,10 @@
 .prev .chevron {
   transform: rotate(180deg);
 }
+
+.carouselText {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+  gap: 0.5rem;
+}

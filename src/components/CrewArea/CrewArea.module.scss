@@ -1,13 +1,6 @@
 @use '@/styles/settings/variables' as *;
 @use '@/styles/utils/rem-calc' as *;
 
-.carouselText {
-  display: flex;
-  flex-direction: column;
-  margin-top: 1.5rem;
-  gap: 0.5rem;
-}
-
 .crewArea {
   display: flex;
   flex-direction: row;
@@ -19,6 +12,7 @@
 }
 
 .textArea {
+  margin-top: rem-calc(125);
   max-width: rem-calc(456);
 }
 
