@@ -1,0 +1,112 @@
+interface RouteHiglight {
+  title: string;
+  body: string;
+  image: string;
+}
+
+export enum Sections {
+  Experience,
+  Routes,
+}
+
+export interface Route {
+  title: string;
+  headline: string;
+  heroImage: string;
+  coverImage: string;
+  price: number;
+  body: string;
+  partyPercentage: number;
+  adventurePercentage: number;
+  slug: string;
+  section: Sections[];
+}
+
+const Routes: Route[] = [
+  {
+    slug: 'ultra',
+    title: 'Ultra',
+    headline: 'The best stories are yet to be told',
+    body: 'From mountains and canyons to fjord- like bays, nostalgic Old towns to most stunning beaches.Get to now Croatias twin sister — Montenegro',
+    price: 1136,
+    heroImage: '/sections/routes/ultra.png',
+    coverImage: '/sections/routes/ultra.png',
+    partyPercentage: 90,
+    adventurePercentage: 30,
+    section: [Sections.Routes],
+  },
+  {
+    slug: 'party',
+    title: 'Party',
+    headline: 'The best stories are yet to be told',
+    body: 'From mountains and canyons to fjord- like bays, nostalgic Old towns to most stunning beaches.Get to now Croatias twin sister — Montenegro',
+    price: 1136,
+    heroImage: '/sections/routeHero/bg.jpg',
+    coverImage: '/sections/experience/party.png',
+    partyPercentage: 95,
+    adventurePercentage: 10,
+    section: [Sections.Routes, Sections.Experience],
+  },
+  {
+    slug: 'greece',
+    title: 'Greece',
+    headline: 'The best stories are yet to be told',
+    body: 'From mountains and canyons to fjord- like bays, nostalgic Old towns to most stunning beaches.Get to now Croatias twin sister — Montenegro',
+    price: 1136,
+    heroImage: '/sections/routes/greece.png',
+    coverImage: '/sections/routes/greece.png',
+    partyPercentage: 40,
+    adventurePercentage: 80,
+    section: [Sections.Routes],
+  },
+  {
+    slug: 'adventure',
+    title: 'Adventure',
+    headline: 'The best stories are yet to be told',
+    body: 'From mountains and canyons to fjord- like bays, nostalgic Old towns to most stunning beaches.Get to now Croatias twin sister — Montenegro',
+    price: 1136,
+    heroImage: '/sections/routes/adventure.png',
+    coverImage: '/sections/routes/adventure.png',
+    partyPercentage: 10,
+    adventurePercentage: 90,
+    section: [Sections.Routes],
+  },
+  {
+    slug: 'sail',
+    title: 'Sail',
+    headline: 'The best stories are yet to be told',
+    body: 'From mountains and canyons to fjord- like bays, nostalgic Old towns to most stunning beaches.Get to now Croatias twin sister — Montenegro',
+    price: 1136,
+    coverImage: '/sections/experience/sail.png',
+    heroImage: '/sections/routeHero/bg.jpg',
+    partyPercentage: 10,
+    adventurePercentage: 10,
+    section: [Sections.Experience],
+  },
+  {
+    slug: 'explore',
+    title: 'Explore',
+    headline: 'The best stories are yet to be told',
+    body: 'From mountains and canyons to fjord- like bays, nostalgic Old towns to most stunning beaches.Get to now Croatias twin sister — Montenegro',
+    price: 1136,
+    coverImage: '/sections/experience/explore.png',
+    heroImage: '/sections/routeHero/bg.jpg',
+    partyPercentage: 10,
+    adventurePercentage: 10,
+    section: [Sections.Experience],
+  },
+  {
+    slug: 'relax',
+    title: 'Relax',
+    headline: 'The best stories are yet to be told',
+    body: 'From mountains and canyons to fjord- like bays, nostalgic Old towns to most stunning beaches.Get to now Croatias twin sister — Montenegro',
+    price: 1136,
+    coverImage: '/sections/experience/relax.png',
+    heroImage: '/sections/routeHero/bg.jpg',
+    partyPercentage: 10,
+    adventurePercentage: 10,
+    section: [Sections.Experience],
+  },
+];
+
+export default Routes;
