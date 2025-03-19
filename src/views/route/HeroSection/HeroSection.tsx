@@ -24,7 +24,7 @@ const HeroSection = ({ route }: HeroSectionProps) => (
         ))}
       </div>
 
-      <RouteInfoCard />
+      <RouteInfoCard route={route} />
     </div>
   </section>
 );

@@ -4,7 +4,18 @@ export interface RouteHiglight {
   image: string;
 }
 
-const boilerplateHighlights = [
+export interface RouteInfoCard {
+  title: string;
+  review: number;
+  numberOfReviews: number;
+  vibe: string;
+  groupSize: number;
+  ageRange: string;
+  freeWifi?: boolean;
+  dateRange: string;
+}
+
+const boilerplateHighlights: RouteHiglight[] = [
   {
     title: 'Fjord like bays',
     body: 'Where the sea meets the mountains. Sail the Bay of Kotor, often called Europes most southernmost fjord. Towering peaks and a rocky coastline dotted with charming waterside towns will leave you breathless.',
@@ -37,6 +48,49 @@ const boilerplateHighlights = [
   },
 ];
 
+const boilerplateInfoCards: RouteInfoCard[] = [
+  {
+    title: 'Dubrovnik party route',
+    review: 4.9,
+    numberOfReviews: 451,
+    vibe: 'party',
+    groupSize: 40,
+    ageRange: '20 to 40',
+    dateRange: 'July | August',
+    freeWifi: true,
+  },
+  {
+    title: 'Dubrovnik sail route',
+    review: 4.8,
+    numberOfReviews: 425,
+    vibe: 'sail',
+    groupSize: 20,
+    ageRange: '30 to 60',
+    dateRange: 'July | August',
+    freeWifi: true,
+  },
+  {
+    title: 'Dubrovnik explore route',
+    review: 4.2,
+    numberOfReviews: 402,
+    vibe: 'explore',
+    groupSize: 10,
+    ageRange: '20 to 30',
+    dateRange: 'April | August',
+    freeWifi: true,
+  },
+  {
+    title: 'Dubrovnik adventure route',
+    review: 5,
+    numberOfReviews: 505,
+    vibe: 'adventure',
+    groupSize: 15,
+    ageRange: '20 to 40',
+    dateRange: 'July | August',
+    freeWifi: true,
+  },
+];
+
 export interface Route {
   title: string;
   headline: string;
@@ -50,6 +104,7 @@ export interface Route {
   slug: string;
   section: Sections[];
   routeHiglights: RouteHiglight[];
+  routeInfoCard: RouteInfoCard;
 }
 
 export enum Sections {
@@ -73,6 +128,7 @@ const Routes: Route[] = [
     adventurePercentage: 30,
     section: [Sections.Routes],
     routeHiglights: boilerplateHighlights,
+    routeInfoCard: boilerplateInfoCards[0],
   },
   {
     slug: 'party',
@@ -90,6 +146,7 @@ const Routes: Route[] = [
     adventurePercentage: 10,
     section: [Sections.Routes, Sections.Experience],
     routeHiglights: boilerplateHighlights,
+    routeInfoCard: boilerplateInfoCards[0],
   },
   {
     slug: 'greece',
@@ -106,6 +163,7 @@ const Routes: Route[] = [
     adventurePercentage: 80,
     section: [Sections.Routes],
     routeHiglights: boilerplateHighlights,
+    routeInfoCard: boilerplateInfoCards[3],
   },
   {
     slug: 'adventure',
@@ -122,6 +180,7 @@ const Routes: Route[] = [
     adventurePercentage: 90,
     section: [Sections.Routes],
     routeHiglights: boilerplateHighlights,
+    routeInfoCard: boilerplateInfoCards[3],
   },
   {
     slug: 'sail',
@@ -138,6 +197,7 @@ const Routes: Route[] = [
     adventurePercentage: 10,
     section: [Sections.Experience],
     routeHiglights: boilerplateHighlights,
+    routeInfoCard: boilerplateInfoCards[1],
   },
   {
     slug: 'explore',
@@ -154,6 +214,7 @@ const Routes: Route[] = [
     adventurePercentage: 10,
     section: [Sections.Experience],
     routeHiglights: boilerplateHighlights,
+    routeInfoCard: boilerplateInfoCards[2],
   },
   {
     slug: 'relax',
@@ -170,6 +231,7 @@ const Routes: Route[] = [
     adventurePercentage: 10,
     section: [Sections.Experience],
     routeHiglights: boilerplateHighlights,
+    routeInfoCard: boilerplateInfoCards[3],
   },
 ];
 
