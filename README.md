@@ -1,8 +1,8 @@
-# Charterag
-
-![Vercel Deploy](https://deploy-badge.vercel.app/vercel/charterag-five)
+<img src="/public/branding/charterag_logo_dark.svg" alt="charterag" width="300"/>
 
 Charter agency website showcasing their different routes and plans. Created using Next.js and Sass using the [Workspace Next.js template](https://github.com/workspace-studio/nextjs-boilerplate) as part of a frontend task.
+
+![Vercel Deploy](https://deploy-badge.vercel.app/vercel/charterag-five)
 
 ## Installation
 
