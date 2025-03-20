@@ -53,7 +53,7 @@
   width: 100%;
 
   @include media(lmd) {
-    width: unset;
+    max-width: rem-calc(400);
   }
 }
 
