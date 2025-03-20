@@ -1,5 +1,6 @@
 @use '@/styles/settings/variables' as *;
 @use '@/styles/utils/rem-calc' as *;
+@use '@/styles/mixins/breakpoints' as *;
 
 .drawer {
   background-color: $green-vogue-200;
@@ -27,12 +28,17 @@
 
 .content {
   display: flex;
+  flex-direction: column;
   gap: 4rem;
   position: relative;
   width: 100%;
   margin-top: 1rem;
   margin-bottom: 4rem;
   transition: all 0.2s ease-in-out;
+
+  @include media(md) {
+    flex-direction: row;
+  }
 }
 
 .contentClosed {
@@ -44,6 +50,11 @@
 .contentImage {
   border-radius: $border-radius;
   object-fit: cover;
+  width: 100%;
+
+  @include media(lmd) {
+    width: unset;
+  }
 }
 
 .bars {

@@ -17,7 +17,7 @@ interface DrawerProps {
 }
 
 const Drawer = ({ selected, bars, title, image }: DrawerProps) => (
-  <div className={styles.drawer} role="button" tabIndex={0}>
+  <div className={styles.drawer}>
     <div className={styles.titlebar}>
       <p className="subtitle semibold">{title}</p>
       <Image
