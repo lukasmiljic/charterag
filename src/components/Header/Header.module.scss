@@ -1,22 +1,26 @@
 @use '@/styles/settings/variables' as *;
 @use '@/styles/utils/rem-calc' as *;
+@use '@/styles/mixins/breakpoints' as *;
+
+.headerContainer {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
 
 .heroContainer {
   color: $white;
-  padding: rem-calc(32) rem-calc(170);
   position: absolute;
   z-index: 10;
-  width: 100%;
+  width: 95%;
 }
 
-.container {
+.dynamicContainer {
   color: $green-vogue-950;
-  padding: rem-calc(32) rem-calc(170);
-  width: 100%;
 }
 
 .header {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
@@ -27,6 +31,10 @@
 }
 
 .navigationlist {
-  display: flex;
+  display: none;
   gap: rem-calc(32);
+
+  @include media(md) {
+    display: flex;
+  }
 }
