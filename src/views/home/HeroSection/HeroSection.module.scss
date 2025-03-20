@@ -1,4 +1,5 @@
 @use '@/styles/settings/variables' as *;
+@use '@/styles/mixins/breakpoints' as *;
 
 .herosection {
   position: relative;
@@ -11,7 +12,7 @@
   overflow: hidden;
 }
 
-.container::before {
+.herosection::before {
   position: absolute;
   content: '';
   background: linear-gradient(180deg, rgb(0 0 0 / 20%) 0%, rgb(0 0 0 / 0%) 19.22%);
@@ -20,7 +21,7 @@
   z-index: 5;
 }
 
-.container::after {
+.herosection::after {
   position: absolute;
   content: '';
   bottom: 0;
@@ -40,9 +41,19 @@
   text-align: center;
 }
 
+.content h1 {
+  @include media(xs, sm) {
+    font-size: 4rem;
+  }
+}
+
 .taglines {
   display: flex;
   justify-content: center;
+
+  @include media(xs, sm) {
+    font-size: 1rem;
+  }
 }
 
 .taglines li + li::before {
