@@ -3,6 +3,7 @@
 
 .bucketsection {
   padding: rem-calc(112) 0 rem-calc(80);
+  overflow: hidden;
 }
 
 .bucketlistSectionHeader {
@@ -56,4 +57,12 @@
 
 .buttons button:hover {
   box-shadow: 0 4px 10px 0 #00000026;
+}
+
+.icon {
+  display: grid;
+  place-content: center;
+  margin-left: 0.5ch;
+  filter: brightness(0) saturate(100%) invert(15%) sepia(10%) saturate(6755%) hue-rotate(178deg) brightness(89%)
+    contrast(101%);
 }

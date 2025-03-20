@@ -38,7 +38,11 @@ const BucketListSection = () => (
     />
     <div className={styles.buttons}>
       <Button text="explore" route="/explore" />
-      <Button text="follow us" color="white" route="https://www.instagram.com/" />
+      <Button text="follow us" color="white" route="https://www.instagram.com/">
+        <div className={styles.icon}>
+          <Image src="/icons/Instagram.svg" alt="ig" width={16} height={16} />
+        </div>
+      </Button>
     </div>
   </section>
 );
