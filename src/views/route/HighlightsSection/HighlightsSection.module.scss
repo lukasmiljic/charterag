@@ -3,7 +3,8 @@
 @use '@/styles/mixins/breakpoints' as *;
 
 .highlightsSection {
-  padding: 4rem inherit;
+  padding-top: 4rem;
+  padding-bottom: 8rem;
 }
 
 .imagegrid {
