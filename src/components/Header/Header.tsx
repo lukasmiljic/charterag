@@ -10,7 +10,7 @@ interface HeaderProps {
 }
 
 const Header = ({ hero }: HeaderProps) => (
-  <div id="top" className={`container`}>
+  <div id="top" className="container">
     <header
       className={`${(hero && styles.heroContainer) || styles.dynamicContainer} ${styles.headerContainer} ${styles.header}`}
     >
