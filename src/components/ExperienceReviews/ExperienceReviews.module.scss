@@ -1,7 +1,16 @@
+@use '@/styles/mixins/breakpoints' as *;
+
 .reviews {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2rem;
   justify-content: space-between;
   width: 100%;
+
+  @include media(sm) {
+    flex-direction: row;
+  }
 }
 
 .review {
