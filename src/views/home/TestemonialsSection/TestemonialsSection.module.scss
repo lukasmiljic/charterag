@@ -1,11 +1,21 @@
 @use '@/styles/settings/variables' as *;
+@use '@/styles/mixins/breakpoints' as *;
 
-.container {
+.testemonialsSection {
   position: relative;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+  height: 300vh;
+  contain: paint;
+}
+
+.container {
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  width: 100vw;
+  height: 796px;
+  padding-top: 12rem;
 }
 
 .bgimage {
@@ -15,7 +25,10 @@
 .content {
   position: relative;
   z-index: 5;
-  padding-left: 880px;
+
+  @include media(lg) {
+    padding-left: 880px;
+  }
 }
 
 .cards {
@@ -33,6 +46,7 @@
   flex-direction: column;
   gap: 16px;
   border-radius: 10px;
+  flex-shrink: 0;
 }
 
 .userinfo {
