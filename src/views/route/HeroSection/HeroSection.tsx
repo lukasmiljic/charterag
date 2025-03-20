@@ -20,7 +20,9 @@ const HeroSection = ({ route }: HeroSectionProps) => (
     <div className={`${styles.infoContainer} container`}>
       <div className={styles.text}>
         {route.body.map(bodyText => (
-          <p className="subtitle">{bodyText}</p>
+          <p key={bodyText.slice(0, 16)} className="subtitle">
+            {bodyText}
+          </p>
         ))}
       </div>
 

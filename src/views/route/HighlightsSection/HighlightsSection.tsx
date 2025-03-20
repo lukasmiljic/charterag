@@ -13,7 +13,7 @@ const HighlightsSection = ({ highlights }: HighlightsSectionProps) => (
     <h3>Route Highlights</h3>
     <div className={styles.imagegrid}>
       {highlights.map(highlight => (
-        <div className={styles.gridItem}>
+        <div key={highlight.image} className={styles.gridItem}>
           <Image className={styles.gridimage} src={highlight.image} alt="grid image" width={265} height={242} />
           <h5>{highlight.title}</h5>
           <p className="body2">{highlight.body}</p>

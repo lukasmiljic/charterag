@@ -50,6 +50,7 @@ const Accordion = () => {
     <div className={styles.accordion}>
       {routes.map((route, i) => (
         <div
+          key={route.title}
           role="button"
           tabIndex={0}
           onKeyDown={event => handleKeyDown(event, i)}

@@ -32,7 +32,7 @@ const Drawer = ({ selected, bars, title, image }: DrawerProps) => (
       <Image className={styles.contentImage} src={image} alt="Ultra background image" width={400} height={276} />
       <div className={styles.bars}>
         {bars.map(bar => (
-          <div className={styles.barArea}>
+          <div key={bar.label} className={styles.barArea}>
             <p className="body1">{bar.label}</p>
             <div className={styles.barContainer}>
               <Bar percentage={bar.percentage} background="white" foreground="#062949" />

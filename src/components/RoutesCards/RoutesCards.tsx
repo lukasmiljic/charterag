@@ -20,7 +20,12 @@ const RoutesCards = () => {
   return (
     <div className={styles.cards}>
       {routeRoutes.map(route => (
-        <button type="button" className={styles.card} onClick={() => navigateTo(`/route/${route.slug}`)}>
+        <button
+          key={route.slug}
+          type="button"
+          className={styles.card}
+          onClick={() => navigateTo(`/route/${route.slug}`)}
+        >
           <Image
             className={styles.bgimage}
             src={route.primaryCoverImage || route.coverImage}
