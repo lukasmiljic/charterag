@@ -23,7 +23,7 @@ const CrewArea = ({ reverse, title, body, buttonText, buttonRoute, children }: P
     <div className={styles.textArea}>
       <h3 className="semibold">{title}</h3>
       <p className="body1"> {body}</p>
-      <Button round color="white" text={buttonText}>
+      <Button route={buttonRoute} round color="white" text={buttonText}>
         <div className={styles.iconborder}>
           <Image className={styles.chevron} src="/icons/Chevron.svg" alt="" width={8} height={8} />
         </div>

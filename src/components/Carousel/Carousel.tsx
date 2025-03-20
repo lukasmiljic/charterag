@@ -23,18 +23,6 @@ const Carousel = ({ images, carouselText, carouselTitle }: CarouselProps) => {
     setCurrentImage(currentImage === 0 ? images.length - 1 : currentImage - 1);
   };
 
-  const handleKeyDown = (event: React.KeyboardEvent<HTMLDivElement>, direction: 'next' | 'prev') => {
-    if (event.key === 'Enter' || event.key === ' ') {
-      event.preventDefault();
-
-      if (direction === 'next') {
-        showNextImage();
-      } else {
-        showPreviousImage();
-      }
-    }
-  };
-
   return (
     <>
       <div className={styles.carousel}>
@@ -52,24 +40,12 @@ const Carousel = ({ images, carouselText, carouselTitle }: CarouselProps) => {
           ))}
         </div>
         <div className={styles.buttons}>
-          <div
-            className={`${styles.prev} ${styles.button}`}
-            role="button"
-            tabIndex={0}
-            onClick={showPreviousImage}
-            onKeyDown={event => handleKeyDown(event, 'prev')}
-          >
-            <Image className={styles.chevron} src="/icons/Chevron.svg" alt="" width={8} height={8} />
-          </div>
-          <div
-            className={`${styles.next} ${styles.button}`}
-            role="button"
-            tabIndex={0}
-            onClick={showNextImage}
-            onKeyDown={event => handleKeyDown(event, 'next')}
-          >
-            <Image className={styles.chevron} src="/icons/Chevron.svg" alt="" width={8} height={8} />
-          </div>
+          <button className={`${styles.prev} ${styles.button}`} type="button" onClick={showPreviousImage}>
+            <Image className={styles.chevron} src="/icons/Chevron.svg" alt="previous" width={8} height={8} />
+          </button>
+          <button className={`${styles.button}`} type="button" onClick={showNextImage}>
+            <Image className={styles.chevron} src="/icons/Chevron.svg" alt="next" width={8} height={8} />
+          </button>
         </div>
       </div>
       <div className={styles.carouselText}>
