@@ -1,17 +1,24 @@
 @use '@/styles/settings/variables' as *;
+@use '@/styles/mixins/breakpoints' as *;
 @use '@/styles/utils/rem-calc' as *;
 
 .crewSection {
-  padding: 4rem 0 8rem;
+  padding-top: 4rem;
+  padding-bottom: 8rem;
 }
 
 .crewSectionHeader {
-  margin-bottom: rem-calc(112);
+  @include media(lmd) {
+    margin-bottom: rem-calc(64);
+  }
 }
 
 .crewAreas {
   display: flex;
   flex-direction: column;
   width: 100%;
-  gap: rem-calc(112);
+  gap: 2rem;
+  @include media(lmd) {
+    gap: rem-calc(112);
+  }
 }

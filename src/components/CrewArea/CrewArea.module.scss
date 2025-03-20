@@ -1,18 +1,28 @@
 @use '@/styles/settings/variables' as *;
 @use '@/styles/utils/rem-calc' as *;
+@use '@/styles/mixins/breakpoints' as *;
 
 .crewArea {
   display: flex;
-  flex-direction: row;
-  gap: rem-calc(96);
+  flex-direction: column-reverse;
+  gap: 2rem;
+
+  @include media(lmd) {
+    flex-direction: row;
+    gap: rem-calc(96);
+  }
 }
 
 .reverse {
-  flex-direction: row-reverse;
+  flex-direction: column-reverse;
+
+  @include media(lmd) {
+    flex-direction: row-reverse;
+  }
 }
 
 .textArea {
-  margin-top: rem-calc(125);
+  margin-top: rem-calc(64);
   max-width: rem-calc(456);
 }
 
