@@ -23,7 +23,7 @@
   width: 418px;
   padding: 1rem;
   border-radius: $border-radius;
-  background-color: rgba($color: $white, $alpha: 0.5);
+  background-color: rgba($color: $white, $alpha: 50%);
   backdrop-filter: blur(10px);
 
   @include media(lg) {
