@@ -1,5 +1,6 @@
 @use '@/styles/settings/variables' as *;
 @use '@/styles/utils/rem-calc' as *;
+@use '@/styles/mixins/breakpoints' as *;
 
 .heroSection {
   padding-bottom: 4rem;
@@ -18,6 +19,11 @@
 
 .contentContainer {
   height: 100%;
+  align-items: center;
+
+  @include media(md) {
+    align-items: flex-start;
+  }
 }
 
 .content p {
@@ -44,16 +50,28 @@
   background: linear-gradient(0deg, #062949 5.32%, rgb(6 41 73 / 0%) 90.36%);
 }
 
+.infoContainer {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+
+  @include media(lmd) {
+    flex-direction: row;
+    align-items: normal;
+  }
+}
+
 .text {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  margin-top: 4rem;
-  max-width: rem-calc(633);
-}
+  margin-top: 2rem;
+  text-align: center;
 
-.infoContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  @include media(lmd) {
+    max-width: rem-calc(633);
+    text-align: left;
+  }
 }
