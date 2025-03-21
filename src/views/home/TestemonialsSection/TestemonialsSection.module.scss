@@ -15,7 +15,10 @@
   top: 0;
   width: 100vw;
   height: 796px;
-  padding-top: 12rem;
+  padding-top: 6rem;
+  @include media(lg) {
+    padding-top: 12rem;
+  }
 }
 
 .bgimage {
@@ -27,7 +30,7 @@
   z-index: 5;
 
   @include media(lg) {
-    padding-left: 880px;
+    padding-left: 60%;
   }
 }
 

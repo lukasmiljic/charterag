@@ -17,11 +17,15 @@
   flex-shrink: 0;
   border-radius: $border-radius;
   background: $green-vogue-900;
-  padding: rem-calc(46) rem-calc(55);
+  padding: 2rem;
   cursor: pointer;
   overflow: hidden;
   display: flex;
   flex-direction: column-reverse;
+
+  @include media(sm) {
+    padding: rem-calc(46) rem-calc(55);
+  }
 }
 
 .card::before {
@@ -57,7 +61,14 @@
   display: flex;
   width: 100%;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
+  flex-direction: column;
+  row-gap: 1rem;
+
+  @include media(sm) {
+    align-items: center;
+    flex-direction: row;
+  }
 }
 
 .nameandprice {
@@ -68,7 +79,7 @@
 }
 
 .bars {
-  display: none;
+  display: flex;
   flex-direction: column;
   gap: 20px;
   width: 290px;
@@ -87,5 +98,6 @@
 
 .barcontainer {
   height: 10px;
-  width: 177px;
+  width: 100%;
+  max-width: 177px;
 }

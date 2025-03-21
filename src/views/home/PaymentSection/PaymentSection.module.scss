@@ -7,7 +7,7 @@
 }
 
 .paymentSectionHeader h2 {
-  width: rem-calc(445);
+  max-width: rem-calc(445);
 }
 
 .cards {
@@ -32,7 +32,7 @@
   border-radius: $border-radius;
   width: 100%;
   max-width: rem-calc(434);
-  height: rem-calc(404);
+  min-height: rem-calc(404);
   gap: rem-calc(50);
   box-shadow:
     2px 2px 6px 0 #00000008,
@@ -42,12 +42,19 @@
 
 .text {
   display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
   justify-content: space-between;
   align-items: center;
 }
 
 .card h3 {
   width: rem-calc(183);
+  text-align: center;
+
+  @include media(sm) {
+    text-align: left;
+  }
 }
 
 .caption {

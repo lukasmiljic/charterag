@@ -43,7 +43,7 @@
 
 .content h1 {
   @include media(xs, sm) {
-    font-size: 4rem;
+    font-size: 3.3rem;
   }
 }
 
@@ -52,7 +52,7 @@
   justify-content: center;
 
   @include media(xs, sm) {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 }
 

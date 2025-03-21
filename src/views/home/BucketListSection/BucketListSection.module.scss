@@ -1,14 +1,20 @@
 @use '@/styles/settings/variables' as *;
 @use '@/styles/utils/rem-calc' as *;
+@use '@/styles/mixins/breakpoints' as *;
 
 .bucketsection {
-  padding: rem-calc(112) 0 rem-calc(80);
+  padding-top: rem-calc(112);
+  padding-bottom: rem-calc(80);
   overflow: hidden;
 }
 
 .bucketlistSectionHeader {
-  margin-top: 4rem;
-  width: rem-calc(464);
+  margin-top: 2rem;
+  max-width: rem-calc(464);
+
+  @include media(sm) {
+    margin-top: 4rem;
+  }
 }
 
 .buttons {
@@ -20,6 +26,7 @@
 .images {
   position: relative;
   display: flex;
+  scale: 0.75;
 }
 
 .images img {
