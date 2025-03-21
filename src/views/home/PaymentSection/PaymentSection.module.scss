@@ -38,6 +38,9 @@
     2px 2px 6px 0 #00000008,
     8px 7px 11px 0 #00000008,
     19px 17px 15px 0 #00000005;
+  @include media(sm) {
+    max-height: rem-calc(404);
+  }
 }
 
 .text {
@@ -46,6 +49,10 @@
   row-gap: 1rem;
   justify-content: space-between;
   align-items: center;
+
+  @include media(sm) {
+    flex-direction: row;
+  }
 }
 
 .card h3 {

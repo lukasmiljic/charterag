@@ -27,6 +27,10 @@
   position: relative;
   display: flex;
   scale: 0.75;
+
+  @include media(sm) {
+    scale: 1;
+  }
 }
 
 .images img {
