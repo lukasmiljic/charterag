@@ -20,7 +20,7 @@ const ExperienceReviews = () => (
       <Image src="/icons/Facebook.svg" width={43} height={40} alt="star" />
       <div className={styles.reviewtext}>
         <h5>
-          <AnimatedCounter from="3.0" to={4.8} /> /5/5
+          <AnimatedCounter from="3.0" to={4.8} /> /5
         </h5>
         <p className="body2">Based on 325 reviews</p>
       </div>
