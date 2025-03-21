@@ -35,7 +35,10 @@ const RoutesCards = () => {
           <div className={styles.text}>
             <div className={styles.nameandprice}>
               <p className="subtitle">From €{route.price}/person</p>
-              <h4 className="semibold">{route.title} route</h4>
+              <h4 className="semibold">
+                {route.title} route
+                <Image className={styles.chevron} src="/icons/Chevron.svg" alt="" width={16} height={16} />
+              </h4>
             </div>
             <div className={styles.bars}>
               <div className={styles.bararea}>

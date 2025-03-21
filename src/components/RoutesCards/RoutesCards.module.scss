@@ -78,6 +78,17 @@
   text-align: left;
 }
 
+.chevron {
+  filter: invert(100%);
+  margin-left: 0.5ch;
+  transition: transform 0.1s ease-in-out;
+  transform: translateX(0);
+}
+
+.card:hover .chevron {
+  transform: translateX(0.5ch);
+}
+
 .bars {
   display: flex;
   flex-direction: column;
