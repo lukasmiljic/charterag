@@ -62,7 +62,10 @@
   flex-flow: column wrap;
   gap: rem-calc(20) rem-calc(50);
   width: 100%;
-  max-height: rem-calc(276);
+
+  @include media(sm) {
+    max-height: rem-calc(276);
+  }
 }
 
 .barContainer {
