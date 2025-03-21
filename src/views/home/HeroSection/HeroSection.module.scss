@@ -34,9 +34,12 @@
 .bgvideo {
   object-fit: cover;
   position: absolute;
-  scale: 1.05;
-  height: 100%;
-  width: 100%;
+
+  @include media(xl) {
+    height: 100vh;
+    width: 100vw;
+    scale: 1.2;
+  }
 }
 
 .content {
