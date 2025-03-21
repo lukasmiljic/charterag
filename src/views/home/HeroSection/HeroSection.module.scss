@@ -47,7 +47,7 @@
 }
 
 .content h1 {
-  @include media(xs, sm) {
+  @include media(0, sm) {
     font-size: 3.3rem;
   }
 }
@@ -56,7 +56,7 @@
   display: flex;
   justify-content: center;
 
-  @include media(xs, sm) {
+  @include media(0, sm) {
     font-size: 0.8rem;
   }
 }
